@@ -1,0 +1,399 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>Why Discord is Sticking with React Native</title><meta content="" name="description"/><meta content="Why Discord is Sticking with React Native" property="og:title"/><meta content="" property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g.png" property="og:image"/><meta content="Why Discord is Sticking with React Native" property="twitter:title"/><meta content="" property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+</style></head><body class="dont-translate"><div style="background-color:hsla(234.93506493506493, 85.56%, 64.71%, 1.00)" class="header-blue-blog wf-section"><div class="blog-navbar"><a href="discord-activities-play-games-and-watch-together" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering" class="dropdown-link w-dropdown-link">Engineering &amp; Design</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured" class="blog-nav-item w-nav-link">Featured</a><a href="https://discord.com/" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""><input type="submit" value="" class="btn-search w-button"></form></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:hsla(234.93506493506493, 85.56%, 64.71%, 1.00)" class="blog-home-hero-header wf-section"></div><div class="blog-featured-section wf-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g.png" loading="lazy" alt="" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, (max-width: 1919px) 91vw, 1368px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g.png 2500w" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="why-discord-is-sticking-with-react-native" aria-current="page" class="blog-hero-heading w--current">Why Discord is Sticking with React Native</a></div></div></div></div></div><div class="blog-post-container wf-section"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240e655608c56eb0dcd972_1_rlgxgYp9bSUIHuV4j_R5iQ.jpg" loading="lazy" width="72" alt="" class="image-22"/><div><div class="blog-post-author">Fanghao (Robin) Chen</div><div class="blog-post-author-name">July 26, 2018</div></div></div><div class="tag-section w-condition-invisible"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div class="empty-state w-dyn-empty"></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>Being one of the first apps built with React Native, we were excited to share <a href="https://blog.discordapp.com/using-react-native-one-year-later-91fd5e949933" target="_blank">our first year journey using React Native</a> back in 2016.</p><p>Looking back at the past three years, React Native has proven to be extremely successful at Discord and helped drive our iOS user adoption from zero to millions!</p><p>More specifically, React Native has allowed us to reap the benefits of quickly leveraging reusable code across platforms, as well as develop a small and mighty team.</p><p>Meanwhile, we’ve learned to adapt to its inevitable pain points without sacrificing overall productivity.</p><h2>Start with iOS, Try Android Later</h2><p>We tried React Native literally the day it came out, holding off on building our iOS app because we knew it would be announced at <a href="https://reactjs.org/community/conferences.html#reactjs-conf-2015" target="_blank">React.js Conf 2015</a>.</p><p>Similar to iOS, we tried React Native the day it was released for Android. We were surprised by how easily and quickly we were able to make our comprehensive iOS app run on Android — took only two days and it built!</p><p>However, we immediately stopped after identifying various issues such as poor performance of touch events and <a href="https://github.com/facebook/react-native/issues/2814" target="_blank">lack of 64-bit support</a>. We continued to follow React Native Android through observing many other apps and blog posts, but there have been no fundamental improvements to convince us to try again.</p><p>Though React Native was not ideal for Android, we realized it would be for iOS. While it might seem odd to choose React Native for only one mobile platform, especially considering React Native was all about “learn once for mobile instead of twice”, it’s given us a lot of benefits, such as:</p><ul role="list"><li>React and Flux make up our web front-end tech stack. Therefore we can easily leverage over nearly all of the business logic (i.e. stores and libraries) and a majority of our front-end tooling and infrastructure (e.g. eslint, prettier and flow) from web to iOS.</li><li>Allowing our React Native engineers to focus on a top-notch iOS app without needing to be proficient at the Android platform.</li></ul><h2>Small &amp; Mighty Team</h2><p><a href="https://itunes.apple.com/us/app/discord/id985746746?mt=8" target="_blank">The Discord iOS app</a> has millions of daily active users and 4.8 stars with over 240k ratings. This has all been accomplished with a team of two engineers!</p><p>React Native allows us to keep our team small and efficient while maintaining <a href="https://blog.discordapp.com/the-four-values-of-working-at-discord-90d5b5102cbc" target="_blank">Discord values</a> like:</p><figure class="w-richtext-align-floatright"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240a1cc626493cb3a9cae8_1*xEwuo_z1TIMDrPSqkpV_Ug.png" alt=""/></div></figure><ul role="list"><li>Offering great opportunities to learn and grow. I joined Discord as a native iOS developer, and conversely, our other developer Victoria joined with a web development background. Like many other engineers at Discord, we both were motivated to step out of our comfort zones, learn a new platform, and eventually become more versatile engineers.</li><li>Sharing as much code as possible without sacrificing the user experience. Front-end engineers really own their features across web and iOS platforms through reusable code.</li></ul><p>Just like our iOS team, Discord is thriving through learning, growing and leveraging expertise every day. As a result, we are incredibly proud of our amazing engineer to user ratio at Discord — 40 engineers to 130M+ users.</p><h2>Moving Fast</h2><h3>Faster Iteration of UI components</h3><p>Without diving into the app, we can use <a href="https://github.com/storybooks/storybook/" target="_blank">storybook</a> to quickly render &quot;dumb&quot; components that don&#x27;t manage any state internally with mock props. By leveraging the same tooling, we can quickly follow the web team who originally adopted storybook. Along with hot reloading, storybook dramatically accelerates our UI development cycle. Our designers can even easily tweak styling directly in storybook.</p><h3>Easier React Native Upgrades</h3><p>It was painful and time consuming to upgrade <a href="https://github.com/discordapp/react-native/commits/0.55-stable" target="_blank">our React Native fork</a> which fixes issues specific to our use cases. Nowadays, releases are more stable. Compared to spending days before, it only took us few hours to upgrade our fork to 0.55 from 0.53 recently.</p><p>However, our web team usually upgrades React and/or other shared dependencies faster than the iOS team. Being on different versions of shared frameworks may cause non-obvious problems which leads to time-consuming investigation. For instance, the iOS app encountered an instant crash in a full-release build although it ran fine locally. After bisecting commits on master, it turned out that the web-only webpack 4 upgrade broke the iOS build due to shared base configs. However, we were able to learn from those issues and apply the knowledge to our infrastructure which ultimately benefits all the teams.</p><h3>Over The Air Patches (OTA)</h3><p>A few days ago, we were able to quickly deploy a post-release fix for cameras and skip the approval process. We can’t even begin to count how many OTAs we’ve shipped. Being allowed more room for mistakes, engineers can ship often with confidence and avoid coordination, which unblocks everyone.</p><h3>And More…</h3><p>In the past three years, React Native has proven to be a great platform which allows engineers to move at an unparalleled speed. Getting it right has required a fair bit of learning, so we’d like to dive deeper into how we’ve learned and adapted to some pain points without sacrificing overall productivity.</p><h2>Learn to Adapt to Pain Points</h2><p>Like any technology, React Native is not perfect, but it excites us to see Facebook and the community at large actively working towards improving or eliminating its weaknesses like <a href="https://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018" target="_blank">large-scale re-architecture</a> and better flow type coverage.</p><p>React Native is certainly a revolutionary and fast-moving framework, so the challenges we face today are quite different than what we faced three years ago. For instance, while learning to reuse front-end tooling, we started with <a href="https://github.com/mjohnston/react-native-webpack-server" target="_blank">React Native Webpack Server</a>, but after a year found out it was abandoned. We eventually had <a href="https://blog.discordapp.com/lessons-from-migrating-a-large-codebase-to-react-16-e60e49102aa6#8808" target="_blank">a non-trivial migration to Haul for React 16</a>.</p><p>Next, we want to share how we conquered our top five pain points with React Native. Hopefully, it will help you too!</p><h3>1. Immature Long Lists</h3><p>Immature long lists have been a well known issue since day one. Without a doubt, we have encountered the same problem in our core component: the chat view. Alternatively, we use UITableView for smooth scrolling performance and dynamic cell heights. Furthermore, our chat view is extensively controlled by Javascript. It computes all the data sources in Javascript, passes them to Objective-C as properties, renders the entire table view in Objective-C via <a href="https://yogalayout.com/" target="_blank">Yoga</a> directly (the same layout engine React Native uses), and finally sends events back to Javascript for user interactions.</p><p>It’s worth mentioning that this chat view is so far the only native view we have, which means the hundreds of other of React Native components we have are able to provide a satisfying 60fps performance.</p><h3>2. High-Priority Updates</h3><p>Facebook is solving this problem by <a href="http://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018" target="_blank">re-architecting the threading model</a>:</p><blockquote><em>It will be possible to call synchronously into JavaScript on any thread for high-priority updates.</em></blockquote><p>We also found a quick workaround for high-priority UI updates while we worked on synchronous keyboard layout animation. <a href="https://medium.freecodecamp.org/how-to-make-your-react-native-app-respond-gracefully-when-the-keyboard-pops-up-7442c1535580" target="_blank">All the keyboard layout solutions</a> are one frame behind when start dismissing keyboard and therefore results in a noticeable gap between TextInput and keyboard.</p><p>After various attempts at solutions like InputAccessoryView, we eventually figured out a way to &quot;portal&quot; the React Native component into native iOS views hierarchy and therefore manage high-priority keyboard updates synchronously in native. We will detail this more in a later blog post.</p><h3>3. Requires Native Platform Knowledge</h3><p>In React Native world, a web developer will take much longer to succeed than a native developer. Most of the time, it has been smooth sailing working on React Native. However, you sometimes come across very specific native technical details, or find yourself working on OS-specific features like <a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/sharing-and-actions/" target="_blank">the share extension on iOS</a>.</p><p>Web developers will likely take longer to learn and sometimes need help from engineers with native experience. But once they learn and grow, they can share valuable information across front-end platforms and help keep our teams small and mighty.</p><h3>4. Startup Delay</h3><p>Time to Interaction (TTI) is a key aspect of how a user perceives the performance of an app. The TTI of our iOS app is noticeably longer than other competing messaging apps written in native code. Since React Native loads and parses all the Javascript code before execution, you get startup delay based on bundle size. In our case, it’s roughly 1.5s startup delay to load a 15mb bundle on an iPhone X.</p><p>Fortunately, Facebook documented <a href="https://facebook.github.io/react-native/docs/performance#unbundling-inline-requires" target="_blank">unbundling</a> to only load necessary portions of the bundle for startup and progressively load more as needed via their packager. However, <a href="https://github.com/callstack/haul" target="_blank">Haul</a>, our React Native packager replacement for webpack, <a href="https://github.com/callstack/haul/issues/70" target="_blank">doesn’t support unbundling/code splitting yet</a>. We wish React Native was more webpack friendly out of the box; we will inevitably need our front-end infrastructure engineers to build this in-house.</p><h3>5. Limited Visibility into Facebook</h3><p>In the React Native repo, we sometimes see hot issues with limited activity in response from Facebook. Lack of visibility into such a large company can bring about frustrations when so many people depend on their open source contributions.</p><p>On the other hand, it forces us to dive into the core codebase in order to figure out the problem, which admittedly one of the best ways to learn an open source platform. By understanding the React Native platform deeply, we were able to maintain a fork that fixes issues for our own use cases and reuse their core modules. For instance, our UIImageView, for avatars and/or emojis in native chat, reuses RCTImageLoader for consistent caching.</p><h2>Sticking with React Native</h2><p>React Native is a great framework that bridges the gap between web and mobile. At Discord it has brought us incredibly efficiency. It allows us to write reusable code, learn from each other, and move fast with a two person team.</p><p>Although there are real pain points and challenges, the overall gains significantly outweigh the costs which motivates us to keep investing in the platform.</p><p><em>We’re always looking for the next great addition to our engineering teams at Discord. If what’s described here sounds interesting to you, and especially if you are a gamer at heart, </em><a href="https://discordapp.com/jobs" target="_blank"><em>check out our available positions here.</em></a></p></div></div><div class="btn-wrapper w-condition-invisible"><a href="why-discord-is-sticking-with-react-native#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div data-w-id="507df21e-7107-68af-2f54-b8d93479cf10" class="column-desctop w-condition-invisible w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="why-discord-is-sticking-with-react-native#heading-1" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-2" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-3" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-4" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-5" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-6" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-7" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="why-discord-is-sticking-with-react-native#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240e655608c56eb0dcd972_1_rlgxgYp9bSUIHuV4j_R5iQ.jpg" loading="lazy" width="47" alt="" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Fanghao (Robin) Chen</div><div class="blog-post-author-desc">frontend @discord</div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Engineering &amp; Design</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="how-data-science-informs-strategy-innovation-at-discord" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720.png 1800w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="how-data-science-informs-strategy-innovation-at-discord" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">How Data Science Informs Strategy &amp; Innovation at Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="why-and-how-discord-uses-patch-to-test-elixir" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png 1800w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="why-and-how-discord-uses-patch-to-test-elixir" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Why and How Discord Uses Patch to Test Elixir</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="how-discord-creates-insights-from-trillions-of-data-points" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png 2500w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="how-discord-creates-insights-from-trillions-of-data-points" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">How Discord Creates Insights from Trillions of Data Points</div></a></div></div></div></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="../jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="../build" class="footer-link-item">Developers</a><a href="../brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="../terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="why-discord-is-sticking-with-react-native#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="../moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="why-discord-is-sticking-with-react-native#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="why-discord-is-sticking-with-react-native#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "Why Discord is Sticking with React Native",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240c2ba0d4313e9250a078_1_VuxdZXwJQfacQ6B33-eP_g.png",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/why-discord-is-sticking-with-react-native",
+ "datePublished": "Aug 23, 2021",
+ "dateCreated": "Aug 23, 2021",
+ "dateModified": "Aug 23, 2021",
+ "description": "",
+   "author": {
+    "@type": "Person",
+    "name": "Fanghao (Robin) Chen"
+  }
+ }
+</script><script nonce="MTQ1LDY2LDE2MSw1MiwxMzcsMTYyLDgwLDE0MQ==">(function(){var js = "window['__CF$cv$params']={r:'76fbeebc3e1ec6b9',m:'ZJ6T9aW8oU2mvtHowuWReye5DTtbuPxFinh95491Xzw-1669395542-0-AZwFEDA74UsyzW9aUuxANIB+CS1bsrTqE2Vmf5vl0lSX4/KxVKIUpNC43+c9azpQN9MPaSaQnOwmOv4xkZ/QpYY1Q7I7uvxXJGzd5ipu3KEgbilF/66azGwyoQEVHlCnBAEOGTEZ+XSRvG32TyhjpMVx2Q/MAk5N4omrClLSt+HG',s:[0x9c24c317d1,0x53a3ca2d2a],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MTQ1LDY2LDE2MSw1MiwxMzcsMTYyLDgwLDE0MQ==',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MTQ1LDY2LDE2MSw1MiwxMzcsMTYyLDgwLDE0MQ==';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>

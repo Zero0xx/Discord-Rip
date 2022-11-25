@@ -1,0 +1,399 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>How To Build An Active And Engaged Indie Game Community With Discord</title><meta content="" name="description"/><meta content="How To Build An Active And Engaged Indie Game Community With Discord" property="og:title"/><meta content="" property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw.png" property="og:image"/><meta content="How To Build An Active And Engaged Indie Game Community With Discord" property="twitter:title"/><meta content="" property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+</style></head><body class="dont-translate"><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="header-blue-blog wf-section"><div class="blog-navbar"><a href="discord-activities-play-games-and-watch-together" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering" class="dropdown-link w-dropdown-link">Engineering &amp; Design</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured" class="blog-nav-item w-nav-link">Featured</a><a href="https://discord.com/" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""><input type="submit" value="" class="btn-search w-button"></form></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="blog-home-hero-header wf-section"></div><div class="blog-featured-section wf-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw.png" loading="lazy" alt="" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, (max-width: 1919px) 91vw, 1368px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw.png 1280w" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/community" class="blog-hero-category">Community</a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord" aria-current="page" class="blog-hero-heading w--current">How To Build An Active And Engaged Indie Game Community With Discord</a></div></div></div></div></div><div class="blog-post-container wf-section"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6192fd9364ed4731031c10c1_Author-Nelly-Webflow.png" loading="lazy" width="72" alt="" class="image-22"/><div><div class="blog-post-author">Nelly</div><div class="blog-post-author-name">December 7, 2016</div></div></div><div class="tag-section w-condition-invisible"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div class="empty-state w-dyn-empty"></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>The following meaty guest post is from <a href="https://twitter.com/pixelatedpost" target="_blank">Andy Nguyen</a>, Producer/Designer at Pocketwatch Games, the creators of <em>Monaco: What’s Yours Is Mine.</em></p><p>Beginning with a short narrative and ending with a dense reference, you’ll learn how Pocketwatch Games uses Discord to develop their community alongside their newest indie game, Tooth and Tail.</p><p>We’re particularly impressed by the matchmaking and game-key solutions, as they offload developer hours to the community which gives the Pocketwatch team more time to build the great game that brings the community together! Oh, and “The Crown” is one of the best community engagement ideas we’ve seen Discord used for.</p><p>Now, for Andy….</p><h1>Bots, Matchmaking, Memes, our Discord’s got it all</h1><p>Engaging with online communities is so important for gamers like me. In many ways, they become a digital family. This is where I’ve met new friends, learned new games, and become who I am today.</p><p>Previously, I was using Ventrilo, Teamspeak, IRC, or other things that would require Server IPs, ports, and other nonsense.</p><p>A lot has changed since then, and boy am I glad we have what we have now.</p><p>We use Discord to <strong>automate giving out game keys</strong>, help our players <strong>find matches faster</strong>, create <strong>engagement and competition</strong> between community members with games like “The Crown,” and <strong>so much more.</strong></p><h3>But who are you again?</h3><p>My name is Andy Nguyen, and I’m a Producer/Designer at <a href="http://www.pocketwatchgames.com/" target="_blank">Pocketwatch Games</a>, and we are working on a fast paced Real Time Strategy game called Tooth and Tail.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f69bb24ebb34e9e73b_0*zijg7FtACMttXOzS.png" alt=""/></div></figure><p><a href="http://store.steampowered.com/app/286000/" target="_blank">Tooth and Tail</a> is a Real Time Strategy game that aims to be deep and competitive without the heavy handed APM (Actions per Minute) and multi-tasking that can exhaust many players. With short rounds, fast action, and playable on controller or keyboard and mouse, our most hardcore members have upwards to 1,000 hours of playtime and it’s still in Alpha.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f63724da4343bf344d_0*56GGC52mh8A0q5K1.png" alt=""/></div></figure><p>We’re the same team behind <a href="http://store.steampowered.com/app/113020/" target="_blank">Monaco: What’s Yours is Mine</a>, powered by the same designers, the same artist, and the Grammy nominated composer Austin Wintory.</p><p>Tooth and Tail is an online multiplayer game and one that thrives on having an active, friendly community. We knew we needed something to help us grow this community and Discord gave us the tools to grow in ways that would have never been possible before.</p><h3>The old ways of IRC, literally unplayable</h3><p>It all began in about 2014, when we first started the Tooth and Tail open alpha. We wanted to chat directly with the community to get away from the formal nonsense of PR-style emails and canned forum replies. An active, real time dialogue is what we wanted to get to the core of what our players were thinking day to day so we could make the best game possible.</p><p>The simplest option we had to make a chat room was IRC. This dinosaur of a system existed since before I was born, probably, but we chose it because it was the only chat room we knew. There was one tiny feature, however, that laid the foundations of how we built our community going forward. It started in IRC but Discord would take it to new heights.</p><h3>That little gold star</h3><p>The first time I ever joined an IRC channel, I noticed there were these little plus signs next to people’s names. What was that all about? They seemed so special. I wanted one. I <em>needed</em> one. That plus sign had nothing to do with anything really. It was meant for a different function entirely, but communities used it to recognize special contributors.</p><p>Anytime we felt like a community member made a big contribution to the community, we rewarded them with a plus. It’s like a gold star by their name. Simple. Awesome!</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f72d717e95dff2afe9_0*FvxNDcR4OgCEDvsT.png" alt=""/></div></figure><h3>Along came a Discord</h3><p>One of the best days in Tooth and Tail’s development was completely unplanned. Two of the most important community contributors to Monaco’s development were Durgrobach and Mastastealth. These evangelists would continue to help us on Tooth and Tail, this time with something as simple as saying “Use this program instead of IRC, it’s called Discord, it’s better.”</p><p>“Why?” I asked, old in my ways. “IRC works. It’s chat.”</p><p>“It looks better” was their reply.</p><p>You got me, valid point. So, I made an account. I gave it a shot. It looked better.</p><h3>The features that brought us all together</h3><p>A personality is hard to convey over the internet. When it’s just text, there’s only so much we can know about someone. Avatars immediately helped us fill in who was who. This was the start of getting to know our community so much better and we, as developers, even had fun with this by giving ourselves unique Monaco-themed Avatars.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f683a51581438bc131_0*iKGnTEE0fsS4eM5q.gif" alt=""/></div></figure><h3>The real magic was in the tools</h3><p>Avatars helped create personality amongst the community, but the single most important feature for our development of Tooth and Tail through Discord is the Roles feature.</p><p>The simplest way to leverage Roles as a tool is to use it to create ranks and recognition within your community. Giving commendations to Superstars who contribute to the game means a lot to people who are passionate about your project. Simply having your name in a different color in chat makes a big difference and that appreciation goes straight back to you.</p><p>But that’s Level One stuff. To understand how much we leverage Discord’s tools, you gotta check out our bots, built by our epic community.</p><p>Level Two, begin.</p><h3>Matchmaking through Legendary Chat Bots</h3><p>Being so early in development, there was a period of time when we didn’t have a way for people to pair up and get a game going. Without chat, your option was to open a game lobby and wait. This was not going to work.</p><p>Instead, we used Discord for our matchmaking. The bot lets you use !ready and !unready to mark yourself as “Looking for Game”. The bot then changes your name to a bright ready color and moves it up the member list so everyone can see that you are “Looking for Game”.</p><p>If you are looking for someone to play against, you could even type !games and the bot will list all players who are marked as “Looking for Game”.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f657a9e293bf26b994_0*63OFxo8fMd_lEWAp.png" alt=""/></div></figure><p>Furthermore, Discord has this sweet notification system that immediately pings people who may not be focused on chat, alt-tabbed, or in another game entirely. It really saved our butts. People could find matches quickly and easily now without us having to spend dev hours and build an internal matchmaking system off the bat.</p><h3>Community Driven Alpha Onboarding</h3><p>So here’s the grindy way of doing an Alpha, tested by us: have a simple form, people fill it out, and go through the list and send people keys for the game. Slow, boring, lame, like a really really bad MMO.</p><p>We did it that way because it was important for us to get to know players before we add them. We only want alpha members who want to play the game, provide feedback, and contribute to the community in a positive way.</p><p>When Discord came along, this process practically fixed itself.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f69647d4e444363edd_0*xhDLRxg0oVgKDSad.gif" alt=""/></div></figure><p>First, we routed all people interested in Tooth and Tail to Discord. Second, Discord would by default list a new member’s name in white. Then, we could then type !key (name) and the bot would PM that person a key from a database. Finally, the bot would change their Role to a member, changing their display name to green.</p><p>Now we know who has a key and who doesn’t. This is great because as the key givers, we can identify who deserves a key and who already has one.</p><p>So, Discord really was better looking and it worked! The community started to grow and grow but we couldn’t spend time moderating chat and seeing who deserved a key. We developed a process to allow for adding members to the alpha without any developer interaction whatsoever.</p><h3>Here come our Moderators to save the day!</h3><p>The ultimate pro-team of passionate Tooth and Tail fans, our amazing moderators, have been with us for years. The system works as follows:</p><p>Our moderators now monitor chat and can !vote on new members (white names). Voted members get a point, and once that prospect gets 4 votes, that person is immediately privately messaged a key by our bot.</p><p>The mods understand what the developers want out of a community member. As community members themselves, they know what they want out of an Alpha member too. Participation and positive attitudes is all we ask for. This process helped perpetuate our community’s culture of positivity, and <strong>we’ve been able to add new players to the Alpha without any developer interaction whatsoever. Now, we can spend more time building the game that brings this community together!</strong></p><h1>And here’s where the fun really begins</h1><p>As game developers, we couldn’t help ourselves but design a game, this time inside Discord itself.</p><p>We called this game “The Crown”</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f711ceb4691bcbe2d8_0*7bSHne54B8mnl8Jz.gif" alt=""/></div></figure><h3>The Crown</h3><p>Competition is founded in recognition and commendation which we easily achieved through the Role system. We made a game mode around this with the help of the bot.</p><p>Any player can fight for the Crown. In order to take the Crown, anyone can issue a challenge once per day. The current Crown holder will be notified by our bot to arrange a match.</p><p>Whoever wins the match will receive the Crown and the Role that comes with it. Again, all of this is handled by simple bot commands.</p><p>This process repeats and creates a new way to play the game inside Discord. We also saw that it enabled discussion among the community with a lot of friendly competition.</p><h1>Tips and Tricks, Developer Edition</h1><p>With the rate the community is growing, we have to constantly expand our Discord development to accommodate rapid changes. Here’s some examples of questions we ask ourselves daily.</p><ul role="list"><li>How can we improve the new member experience?</li><li>Where do members go if they want to have certain questions answered?</li><li>How do we accommodate for the rapidly growing size of the community?</li><li>How can we consistently respond to frequently asked questions?</li></ul><p>As a developer, these are all problems you will have to face if you are growing your Discord channel. The good news is they are all solvable problems.</p><p>Here’s how we address them.</p><h1>The Tools</h1><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f71b3dab850f461b41_0*ppgjsbsBWlyXDsH_.gif" alt=""/></div></figure><h1>Channel Based Tools</h1><p>Here’s a collection of channel based tricks you can do in Discord to better your community.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f79142205af96c8600_0*5saW7KX65tzu58U_.jpeg" alt=""/></div></figure><h3>Static Rooms</h3><p>Consider making a chat room that disables chat for all members, except for the Developers. This allows you to create a channel where members can go to get all important information, free of spam, emotes, and dongers. They can still react to posts though, and show how they feel about the post.</p><p>Here’s some examples of what we have:</p><p><strong>Announcements <br/></strong>A channel for all important game development announcements.</p><p><strong>Rules <br/></strong>A channel that establishes rules like how to participate, what is unacceptable, and FAQs.</p><p><strong>Hall of Fame</strong> <br/>a place where we can recognize previous tournament winners, complete with ranks, dates, and VODs.</p><h3>Collaboration Rooms</h3><p>We created multiple channels within our Discord for the purposes of coordinating different community teams to help build upon the game.</p><p>Here are some examples of our strike teams:</p><p><strong>Tooth and Tail Wiki</strong> <br/>Collaborative effort among interested community members to talk about which aspects of the wiki need to be updated and who is responsible for each section.</p><p><strong>Tech Support<br/></strong>Most of the technical support questions are easily answered by veteran players of the community. We separated these conversations out so players knew exactly where to go. As developers, this is a huge load of work that is relieved from us.</p><p><strong>Mod Development<br/></strong>Modding and Real Time Strategy games have a massive history, from DotA to Tower Defense. As developers, we are inspired to give players the tools to make their own creations. Modding requires a lot of discussion and teamwork, so we created a place for interested parties to discuss.</p><p><strong>Balance<br/></strong>Players love to endlessly debate over what is OP or UP. To support these conversations and to help developers fine tune the game, we’ve separated these debates out into another channel. A small team can now have the help of the entire community to balance a complex strategy game.</p><p><strong>Tournament Coordination<br/></strong>Using Challonge, we used to make brackets and stream tournaments of Tooth and Tail. As the community took on a life of its own, a few members started coordinating their own tournaments. This coordination is a huge task, since there can be a lot of downtime as people wait through matches. This channel is for conversation about how to get these tournaments to run as smooth as possible.</p><h1>Permission Based Tools</h1><p>These are a few ways you can utilize Roles and permissions to boost community members.</p><h3><strong>Superstars</strong></h3><p>We make use of assigning color to member names and their priority on the member list to highlight positive contributing members. We think of this as a dynamic community spotlight, or a featured list. Here’s how to do it:</p><ul role="list"><li>Create a new role, of any title of your choice.</li><li>Rank the new role above other player roles by dragging it.</li><li>Assign a unique color to this role.</li><li>Under Role Settings, check “display role members separately from online members.”</li><li>Assign your new role to the Superstar of your choice and voila!</li></ul><h3><strong>Champions!</strong></h3><p>Once we began hosting tournaments, the results became a popular topic of discussion among the community. We used the same system as the Superstar system mentioned earlier and created a new role for the Champion.</p><p>Now, when the Champion speaks, everyone knows that he or she is the best at Tooth and Tail. Bragging rights are OP.</p><h3><strong>Moderators</strong></h3><p>As the community grew, there was no way to we could moderate it on our own. The next logical step was to seek outside help. Luckily, there are a lot of people willing to help out the development since they love the game.</p><p>We started by identifying fans of the game who were consistently present in our community. Within those fans, we identified those who shared the community’s culture and vision. There are people who are born to moderate based on their experience as gamers and their maturity as people. We found that these people are more than willing to moderate. It’s a very rewarding privilege.</p><p>A moderator is in essence, no different from a regular member except they can Kick, Ban, and Mute other members. These functions are last resorts however, and in our time of running a community through Discord they have only been used a handful of times. The true power of a moderator is to be able to set the tone and culture of the chat.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421f79d777d6cb17e18d9_0*SINKbcIUmhovkW2C.png" alt=""/></div></figure><h1>Custom Built Bots</h1><p>One massive bot was built by the help of several community members that expands the functionality of Discord to whole new levels. They named it Pocketbot, and it has many functions.</p><p>Here are some examples of what Pocketbot can do:</p><h3><strong>Community/Developer Engagement</strong></h3><p>When a Developer pops into Discord, Pocketbot sends a greeting message to the general chat. This let’s everyone know that a developer has logged on. This increases our community engagement as our passionate fans have a lot they want to tell us (and we like listening)!</p><h3><strong>Balance Data</strong></h3><p>Pocketbot scans the most recent version of the game and extracts important data. Once this is done, the bot can display Tooth and Tail unit data at any time. If people are curious about the stats of a certain unit, they can type a specific command and the information on that unit is displayed in chat. This feature encourages so much discussion about game balance.</p><h3><strong>Steam Verification</strong></h3><p>We rapidly iterate on the game thanks to community feedback. Sometimes we can fix a bug in minutes and throw it online. Sometimes we will even test out a balance change for fun. This development style requires a lot of patches, sometimes more than five a day. However, the game won’t run properly if players are on different versions. We gave Pocketbot a !verify command that will return a simple link which allows players to update their version of Tooth and Tail to the latest patch with one click.</p><h1>Integrations</h1><p>With our powers combined, we are…</p><h3><strong>Stream integration</strong></h3><p>We started building our community off of weekly development streams. Naturally, many of our members stream themselves, due Tooth and Tail’s infinite replay-ability and spectator features. Discord promotes a stream culture by showing who’s streaming at any given time. As a result, there’s constant content for people to consume, which is important for when we aren’t streaming ourselves.</p><h3><strong>Custom GIFs and Emotes</strong></h3><p>We’ve created custom GIFs and emotes for our server. These emotes have taken on a life of their own, creating cultural responses to common scenarios. We even have our own Kappa style emotes based on the developers’ faces.</p><p>Our channel now has personality, complete with memes of our own. It’s incredibly hilarious and very entertaining. Having inside jokes and shared memes tightens the bond between the community. As a result, people became more invested with each other and the game.</p><h1>But seriously, the community members are our true Heroes</h1><p>It wouldn’t be a community blog post if the post itself wasn’t supported by the community. Many members even helped me write this very post itself, with a special thanks to Lacante and Gaming Mistress!</p><p>Additionally, the person who first told me about Discord, <a href="http://www.brianfran.co/" target="_blank">Brian Franco</a>, aka Mastastealth, has contributed all the art to this post.</p><p>The community has even offered to place all their tools readily available on <a href="https://gitlab.com/pocketrangers/pocketbot" target="_blank">gitlab</a> for anyone to look at.</p><p>I also want to thank our moderators, our Superstars, and all our fans. Deadbones for having over 1,000 hours playing the game and teaching us more about Tooth and Tail than we knew ourselves. CaptnFog for managing the tournament scene known as <a href="http://www.clashofcomrades.com/" target="_blank">Clash of Comrades</a>. Durgrobach and Mastastealth for knowing all of the intricacies Discord has to offer. AVUltima, Zenoakoop, Lacante, and many more for creating helpful video tutorials and guides. There’s so many more I wish I could get to, thank you all very much.</p><h3>Check it out yourself:</h3><p>If you are interested in playing with all our widgety doo-dads or if you want to try the Tooth and Tail multiplayer alpha, check us out at <a href="http://www.discord.gg/Pocketwatch" target="_blank">http://www.discord.gg/Pocketwatch</a></p><p>If you want to check out what Pocketwatch is up to, we also have a blog at <a href="http://www.pocketwatchgames.com/" target="_blank">http://www.pocketwatchgames.com</a></p><p>---</p><p>We hope you enjoyed Andy’s post and we look forward to all the creative ways that developers continue to use Discord to boost their communities! Thanks for reading :)</p></div></div><div class="btn-wrapper w-condition-invisible"><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div data-w-id="507df21e-7107-68af-2f54-b8d93479cf10" class="column-desctop w-condition-invisible w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-1" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-2" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-3" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-4" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-5" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-6" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-7" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6192fd9364ed4731031c10c1_Author-Nelly-Webflow.png" loading="lazy" width="47" alt="" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Nelly</div><div class="blog-post-author-desc">Nelly writes blogs, helps us stay productive, laughs at us in chat, and keeps the wheels running at Discord HQ.</div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Community</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="discord-moderator-admin-community-education-resources" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2600.png 2600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-3200.png 3200w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png 7501w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="discord-moderator-admin-community-education-resources" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Building Better Communities with Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="pride-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="pride-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Pride 2022 @ Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="aapihm-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="aapihm-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">AAPI Heritage Month at Discord: Celebrating Who We Are</div></a></div></div></div></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="../jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="../build" class="footer-link-item">Developers</a><a href="../brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="../terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="../moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="how-to-build-an-active-and-engaged-indie-game-community-with-discord#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "How To Build An Active And Engaged Indie Game Community With Discord",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612421cd02a874ff488ead22_1_CUiaU-R9VnY2z_T7UOaSqw.png",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/how-to-build-an-active-and-engaged-indie-game-community-with-discord",
+ "datePublished": "Sep 22, 2022",
+ "dateCreated": "Aug 23, 2021",
+ "dateModified": "Sep 22, 2022",
+ "description": "",
+   "author": {
+    "@type": "Person",
+    "name": "Nelly"
+  }
+ }
+</script><script nonce="MTk2LDk2LDk0LDE0NywyMCw4OCwyMSwxMQ==">(function(){var js = "window['__CF$cv$params']={r:'76fbf38cfe03eb57',m:'d8SsfDXzqIFaZkrzmWidF65o_JnXUz4yinbAK..DWg4-1669395739-0-AaDvFxm8Th15lrYsgHOAGCkZKtuGAg+p8KKuawqZlzJumUPpNCS6juhcmsufTxz7QtrMCjUq81QbqBuUinwE7bgJEriDWWTP2cd8vauSKt6MqA0CCdqulz3UUxN/F1PCEdoDkllRxSMUS4eFU3msxHJsa5R0Sk0ZxKwej/SqxJBc7quL2FgQ8+p5Es4wL6p4xyWzz1OdSSxo3dp6CcAGlNw=',s:[0x88e7e68521,0x2e03743d30],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MTk2LDk2LDk0LDE0NywyMCw4OCwyMSwxMQ==',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MTk2LDk2LDk0LDE0NywyMCw4OCwyMSwxMQ==';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>

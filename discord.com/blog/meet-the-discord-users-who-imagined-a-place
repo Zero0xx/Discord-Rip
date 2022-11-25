@@ -1,0 +1,399 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>Meet the Discord Users Who Imagined a Place</title><meta content="Let&#x27;s talk about you, the community who inspired the entire Imagine a Place project and Discord—The Movie (2021)." name="description"/><meta content="Meet the Discord Users Who Imagined a Place" property="og:title"/><meta content="Let&#x27;s talk about you, the community who inspired the entire Imagine a Place project and Discord—The Movie (2021)." property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6115872fce8075d4115edd0a_ezgif.com-gif-maker%20(1).gif" property="og:image"/><meta content="Meet the Discord Users Who Imagined a Place" property="twitter:title"/><meta content="Let&#x27;s talk about you, the community who inspired the entire Imagine a Place project and Discord—The Movie (2021)." property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6115872fce8075d4115edd0a_ezgif.com-gif-maker%20(1).gif" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+</style></head><body class="dont-translate"><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="header-blue-blog wf-section"><div class="blog-navbar"><a href="discord-activities-play-games-and-watch-together" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering" class="dropdown-link w-dropdown-link">Engineering &amp; Design</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured" class="blog-nav-item w-nav-link">Featured</a><a href="https://discord.com/" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""><input type="submit" value="" class="btn-search w-button"></form></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="blog-home-hero-header wf-section"></div><div class="blog-featured-section wf-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6115872fce8075d4115edd0a_ezgif.com-gif-maker%20(1).gif" loading="lazy" alt="" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/community" class="blog-hero-category">Community</a><a href="meet-the-discord-users-who-imagined-a-place" aria-current="page" class="blog-hero-heading w--current">Meet the Discord Users Who Imagined a Place</a></div></div></div></div></div><div class="blog-post-container wf-section"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619442eb8b3fab3eda4c29eb_Author-Wumpus-Webflow.png" loading="lazy" width="72" alt="" class="image-22"/><div><div class="blog-post-author">Wumpus</div><div class="blog-post-author-name">July 23, 2021</div></div></div><div class="tag-section"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div role="list" class="collection-list-2 w-dyn-items"><div role="listitem" class="collection-item-5 w-dyn-item"><a href="../tags/community-spotlight" class="w-inline-block"><div class="text-block-14">Community Spotlight</div></a></div></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>Let’s talk about sandwiches.</p><p>In <em>Discord — The Movie (2021),</em> Danny DeVito is introduced to the weird, wacky, and wonderful world of Discord. Danny helps himself (and doesn’t want to let go of) a sandwich laid out for his convenience. You may even spot the same bready snack in Discord art from time to time. </p><p>All this might naturally lead you to wonder: what do sandwiches have to do with Discord?</p><figure style="max-width:533pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587b5a6b1ec0d87288f77_ezgif.com-gif-maker%20(1).gif" loading="lazy" alt=""/></div></figure><p>It all comes back to an Instagram story where we asked our followers, “what does Discord mean to you?” Among the countless thoughtful responses about found friends, guilds, new hobbies, and distant connections — the kind of replies that make hearts feel full and eyes a little watery — one person replied simply: “sandwich.”</p><p>The thing about that answer is, we couldn’t possibly have predicted it. It was confusing, abrupt, and unexpected. It wasn’t part of our five-year strategy, messaging, or vision boards. It was born exclusively from our community. And it was beautiful. We’ve carried that moment with us ever since.</p><p>You voted on Danny DeVito as the best representative for Discord, and now he’s recently made his Discord debut. <a href="https://blog.discord.com/happy-blurpthday-to-discord-a-place-for-everything-you-can-imagine-fc99ee0a77c0">You helped dictate the new look and feel of our platform</a>, from fonts and colors to details as specific as “how many eggs is too many eggs?” And your own words helped inspire the Imagine a Place project.</p><p>Last December during our <a href="https://blog.discord.com/the-biggest-snowsgiving-celebration-to-date-starts-now-b231f8c82de">Snowsgiving 2020</a> event, we once again asked you, the community, to share your Discord experiences with us. After reading through 3,400 wonderful, moving stories, we invited a small group to join a server just for discussing their experiences and aspirations on Discord. It was their ideas, discussions, and inspiration that helped us form the “Imagine a Place” project, and ultimately <em>Discord — The Movie (2021)</em>. We called this community the Sandwich Server.</p><figure style="max-width:700pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587ce7e29092fd0a5971b_0*C_s7BQ1f0TCSAX5H.png"/></div></figure><p>All of the creative concepts featured within <em>Discord — The Movie (2021)</em> were made in collaboration with these community members. They helped us realize the spaces they found on Discord, dictating set design, scene choices, casting decisions, and much more. Thanks to them and our community as a whole, the entire project reflects the unique passions, personalities, and interests that make Discord what it is.</p><p>We’re excited to highlight four of the community members from the Sandwich Server who helped inspire what Discord is today.</p><div class="w-embed"><hr class="hr-style"></hr></div><h1>Lucie Winterwolf</h1><p>Lucie Winterwolf (represented as the pirate in the film) is a leader of the Helpful Pirate Society, a group formed six years ago around the sandbox building game Cubic Castles whose ranks have swollen to nearly 400 members. The Pirates offer a friendly play to find gaming advice and discussions with “no bullyin’, no griefin’, no scammin’.” No longer bound to Cubic Castles, the Pirates call many games and platforms their home.</p><figure style="max-width:1400pxpx" class="w-richtext-align-fullwidth"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cf91c1daf9f57e593f_1*PcHEUaARMERUf6iegaZM1A.jpeg"/></div></figure><p>“For us, Discord be more than Games, though,” says Lucie in a tone as if they’d be sailin’ the salty seas. “We has a cookin’ club, a book club n’ chat area, Homework chats, even groups for pets n’ botany. Members really rely on the homework help studyin’ durin’ exam time! And a lot o’ folks really got support durin’ the physical separation durin’ quarantine. I know I sure did.”</p><p>For Lucie, who has been disabled since an accident in 2005, the feeling of being cut off from the world is familiar. “When I first found meself isolated by me disabilities, there weren’t so many multiplayer games or virtual worlds. I basically had MIRC and other chat clients and messenger. Overall, the Discord experience has changed me life in that it makes the world so much more accessible to me. An’ I DO literally mean the WORLD. I has mateys around the globe, any time, day or night…which is especially great, since I dun’t tend to sleep much, heehee.” Their setup is reflected in their segment of the video, where their pirate-themed berth is brought to glorious life.</p><figure style="max-width:533pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61158f6a78e97149969b3ec8_1.gif" loading="lazy" alt=""/></div></figure><p>Lucie explains how online communities represent a way to get out and explore all the world’s possibilities…and not just figuratively. In one instance, dubbed the Great Blackberry Bramble Caper, their servers offered a literal and physical kind of mobility. “A giant blackbery thicket completely overgrew a sidewalk I has to go on to get to physical therapy 3x/week, or to the store or to get my favorite takeout,” Lucie explains. “Crossing the street ain’t possible- the sidewalk on the other side be continuous with no divots for wheelchairs to get on/off for nearly 3/4 o’ a mile. The city were not respondin’ to repeated complaints. I used the Discord server for me local political group to organize an action to ‘take care’ o’ the issue, followed by pizza at me digs. Safe to say, I can now sail freely past that 25-foot area freely.”</p><figure style="max-width:533pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61158f72014a3968bb6be30a_2.gif" loading="lazy" alt=""/></div></figure><p>Games may have given the Helpful Pirates a reason to come together, but to people like Lucie, they’re so much more than that. They’re friends, allies, and confidants who are there for you no matter the time or place. As Lucie puts it, “we ain’t just a guild or a crew…we be a true family.”</p><h1>Kevdog</h1><p>“The part I enjoy the most is knowing that there is always more to come,” says Kevdog, owner of the partnered Oceanside Pokémon server and also represented in <em>Discord — The Movie (2021)</em>. “Whether it be new games, announcement trailers or any other surprise. There just isn’t an end to the series and that’s pretty motivating.”</p><figure style="max-width:700pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cfbeda3018dc07b48d_1*UINzMOdMqKEAuLKr_JZKxw.jpeg"/></div></figure><p>For Kevdog, chatting about upcoming pocket monster properties is just one way to pass the time on Discord. He uses the service just as much to keep in touch with his own friends and family members. He’s even managed to explain it to his grandmother, although he couldn’t quite persuade her to make an account yet (“she’s still mindblown by texting!”). And, of course, Kevdog is happy to meet people discussing more than just Pokémon.</p><figure style="max-width:533pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61158f7aaf56320cea0fa42f_3.gif" loading="lazy" alt=""/></div></figure><p>“Here on Discord, for the first time ever I was able to find multiple people that played many nostalgic games that I played as a kid. When you’re very young, memories seem to be… I’m not sure how to word it. Childhood games that I played really aren’t that good, but for some reason I just absolutely love the memories and looking back at them, no matter how good or bad they were. On Discord for the first time I got to find others that played some of the same games I did and it was such a throwback talking about it.”</p><figure style="max-width:533pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cf9af2ea4684127e49_1*h4XrGrkuImfCGYU2MADzPQ.gif"/></div></figure><p>Like most people, he’s found staying in touch online increasingly important over the past year. That longing for a physical space might have contributed to the offbeat vision for his segment of the Imagine a Place video: a cozy, family-owned pizzeria. A place where you can just exist, let the world go by around you, recognize people, and be recognized. And eat pizza. A very understandable fantasy to have, Kevdog — here’s hoping you’ve got a slice right now.</p><h1>Miruki_tea</h1><p>“To be frank,” admits user Miruki_tea, “I was going through some rough times when I started being more active on Discord.” But though her struggles with mental health were leaving her feeling isolated, she ended up taking up some school friends on an invitation to join their server. “The friends I made in that server were so kind and fun that I felt myself getting better, even if it was a little bit.”</p><figure style="max-width:700pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cfa60c7735775d9222_1*rUWyQkMHf0mb8fYR1mJfjQ.jpeg"/></div></figure><p>The more time she spent in these online communities, the more she cautiously began branching out. I “played online games for the first time and even got the nerve to join voice chats, even though I was muted my first few times haha, I actually felt super included. Discord was my safe space, a place where I wasn’t scared to explore outside my comfort zone.”</p><p>Part of it was that she felt she could be more laid-back in an online environment: “Like many people, my online presence is different than it is in real life. I act different, I speak differently, to be honest my whole personality is different. It’s not a bad thing but sometimes it’s exhausting. It’s like…having to “mask” your identity around people because you’re not sure how they’ll react. But on the internet, you can be whoever you want to be and that really changes you. It’s really freeing to your mind to be able to be true to who you are, even if you haven’t completely figured that out yet.”</p><p>For her contribution to the Imagine a Place project, Miruki_tea envisioned a sort of dream school where she felt empowered to come out of her shell. This comes back to her own experiences with the educational system, an ordeal she compares unfavorably to the much more nurturing atmosphere on Discord. “Growing up, schools were dreadful for me. The way school systems weren’t very accommodating for the way my brain worked. Between all the social cliques and strict rules, school was very exhausting. I got bored easily and I was too nervous to make friends or even good memories. I missed out on how school was for a normal kid. But Discord changed that. I’m not afraid to show off the things I like because no one really makes fun of you.”</p><p>If Miruki_tea had one piece of advice for people just starting to join their own online communities, it would be to assert their own identity. “Don’t be afraid to show off who you are! It’s scary at first but take those baby steps. You’ll warm up to people and find that sharing your interests can be so rewarding. I know things like these are easier said than done but if I did it, so can you! The best thing about discord is that there is no “right” way. Whether you only use certain channels or spend your whole day in a voice call muted, you’ll find your people. But most importantly, you’ll find yourself.”</p><p>In other words: if Discord’s a dream school, look out for your table in the lunchroom. Somewhere out there, your seat is waiting for you.</p><h1>NaviKing</h1><p>When asked how he uses Discord, NaviKing doesn’t have to think very hard. “Man, how <em>don’t </em>I use it in my daily life?”</p><figure style="max-width:700pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cf3f50e3181f2f3a87_1*HwpEOUXX1Koc2VQvPkCOZw.jpeg"/></div></figure><p>It’s an understandable reaction. Not only does he own two Partnered Discord servers, one for the game Brave Frontier and one for the Azur Lane franchise, he manages several more and is currently working on a networking server for community mentors and leaders on Discord. He’s invested in every aspect of Discord, from communities to the <a href="https://discord.com/partners">Partner Program</a> to the moderation community. All that’s on top of the personal server he uses to talk with his wife, currently studying abroad, along with connecting with the many close friends he’s made over the years. Discord is just a large part of what NaviKing does, and it’s something he’s put a lot of time into understanding.</p><p>For obvious reasons, this means putting a lot of effort into creating communities that don’t need him or his moderator teams to micromanage them every moment. “I think conceptually, the hardest part of running any server is balancing the needs of all the stakeholders of the community when crafting policy and then enforcing that policy consistently and fairly,” he says.</p><p>“As servers grow, what various people in the server want, what your mod team wants, what you want, what the developers want (if your server is official/verified) and even what the Discord Community Guidelines demand may be at odds with each other. Finding the best way to please the most people (or the right people) in a way that doesn’t end up sabotaging your community short term and long term is an extremely difficult balancing act, as well as dealing with smaller conflicts that come up when enforcing your server rules to ensure that people understand the need and reasoning for those rules and that they trust the mod team to enforce them correctly and consistently.”</p><p>NaviKing knows what he’s talking about. Not only has he had tremendous success as a server owner, he’s also soon to be one of the latest members of the Discord family. When asked if he has any advice for someone hoping to follow in his footsteps, he offers this:</p><p>“Get some community moderation/management experience under your belt, read through the <a href="../moderation">Discord Moderator Academy</a>, and take the <a href="https://blog.discord.com/announcing-the-discord-moderator-academy-exam-a1bcb5b9d405">Discord Moderator Academy Exam</a>…this is the best way to get your foot in the door and to get yourself in front of engaged staff members. From here there are a variety of ways to contribute…and show staff that you know your stuff (which is why the Certified Discord Moderator badge exists of course), such as writing articles for the Discord Moderator Academy, joining the Moderator Program, or even providing general advice and engagement on the Discord Moderator Discord.”</p><p>And of course, if your aim is to end up part of the Discord staff like NaviKing, you’ll want to visit <a href="../jobs">discord.com/jobs</a>. Watch that space, since you never know what’ll come up.</p><div class="w-embed"><hr class="hr-style"></hr></div><p>Thank you so much to all four of these amazing community members for helping inspire and guide the Imagine a Place project. Here’s the list of community members and their quotes credited in the <em>Discord — The Movie (2021)</em> that were the backbone of Imagine a Place:</p><figure style="max-width:1400pxpx" class="w-richtext-align-fullwidth"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cfe810a21026b9630b_1*zmxHzJfD1KHJ2ZiJEh0mkQ.jpeg"/></div></figure><figure style="max-width:1400pxpx" class="w-richtext-align-fullwidth"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cfc21479a1f7d02661_1*9hUbELTMMf6jHKxCOqYAPw.jpeg"/></div></figure><figure style="max-width:1400pxpx" class="w-richtext-align-fullwidth"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611587cf2350a21085880189_1*cnqH3ND78_In5_OoXBfJoQ.jpeg"/></div></figure><p>You, the one reading this article, and the community at large will always, always, <em>always</em> be central to how Discord looks, feels, and develops. We’re proud to find inspiration, guidance, and direction from our community in all of these ways and so many more, like user-submitted <a href="https://support.discord.com/hc/en-us/community/topics">feature suggestions</a>, which have had a tremendous role in getting us where we are today.</p><p>We love reading your stories, so share with us! Use #imagineaplace to share what Discord means to you on <a href="https://www.instagram.com/discord/">Instagram</a>, <a href="https://twitter.com/discord">Twitter</a>, or <a href="https://www.tiktok.com/@discord">TikTok</a>. You never know where that first step may lead!</p></div></div><div class="btn-wrapper w-condition-invisible"><a href="meet-the-discord-users-who-imagined-a-place#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div data-w-id="507df21e-7107-68af-2f54-b8d93479cf10" class="column-desctop w-condition-invisible w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="meet-the-discord-users-who-imagined-a-place#heading-1" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-2" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-3" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-4" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-5" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-6" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-7" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="meet-the-discord-users-who-imagined-a-place#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619442eb8b3fab3eda4c29eb_Author-Wumpus-Webflow.png" loading="lazy" width="47" alt="" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Wumpus</div><div class="blog-post-author-desc">There&#x27;s always a friend waiting for you. Wumpus is the first person anyone sees when using Discord, marking the beginning of growing long-lasting friendships and great communities on the platform. And yes, the leaf can come off. </div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Community</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="discord-moderator-admin-community-education-resources" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2600.png 2600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-3200.png 3200w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png 7501w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="discord-moderator-admin-community-education-resources" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Building Better Communities with Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="pride-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="pride-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Pride 2022 @ Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="aapihm-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="aapihm-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">AAPI Heritage Month at Discord: Celebrating Who We Are</div></a></div></div></div></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="../jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="../build" class="footer-link-item">Developers</a><a href="../brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="../terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="meet-the-discord-users-who-imagined-a-place#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="../moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="meet-the-discord-users-who-imagined-a-place#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="meet-the-discord-users-who-imagined-a-place#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "Meet the Discord Users Who Imagined a Place",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6115872fce8075d4115edd0a_ezgif.com-gif-maker%20(1).gif",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/meet-the-discord-users-who-imagined-a-place",
+ "datePublished": "Sep 22, 2022",
+ "dateCreated": "Aug 12, 2021",
+ "dateModified": "Sep 22, 2022",
+ "description": "Let&#39;s talk about you, the community who inspired the entire Imagine a Place project and Discord—The Movie (2021).",
+   "author": {
+    "@type": "Person",
+    "name": "Wumpus"
+  }
+ }
+</script><script nonce="MTA0LDEzMiwxMTksMjE5LDkwLDE5NywxNDAsMjA2">(function(){var js = "window['__CF$cv$params']={r:'76fbee2afe0a089d',m:'ZqmtrfjIhxkE6K1HfOAMNwc2g5XtmWt3ZRxEIsHuJ4w-1669395519-0-AUqenvCYB5rr+nq4i/3R+XXAbYtTfFCJS1NNepZi3gNh/B5Ede1yF9PWHjV3PHFodL6KBBwyPRqusGIMZakVNSb9UE42UoVm6WfwlryKEPU+HAbO759omQ0KsIDjWy5W0ff/7LtxfxQWsdkp31xRHEM56tZZ2qhztZVDZ3rZve3ZIoGv4r7Qtz+nxxOd8Du8zg==',s:[0x3f4d87b71f,0xbd7dc7b3d7],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MTA0LDEzMiwxMTksMjE5LDkwLDE5NywxNDAsMjA2',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MTA0LDEzMiwxMTksMjE5LDkwLDE5NywxNDAsMjA2';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>

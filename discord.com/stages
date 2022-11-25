@@ -1,0 +1,398 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb279767da0f5f" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>Bring Your Community Together With Stages | Discord</title><meta content="Stages offer a great way to engage and grow your community through easy to run audio events" name="description"/><meta content="Bring Your Community Together With Stages | Discord" property="og:title"/><meta content="Stages offer a great way to engage and grow your community through easy to run audio events" property="og:description"/><meta content="https://discord.com/assets/652f40427e1f5186ad54836074898279.png" property="og:image"/><meta content="Bring Your Community Together With Stages | Discord" property="twitter:title"/><meta content="Stages offer a great way to engage and grow your community through easy to run audio events" property="twitter:description"/><meta content="https://discord.com/assets/652f40427e1f5186ad54836074898279.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+</head><body class="body"><div class="header wf-section"><div class="header-app-bar"><a href="https://discord.com/" class="blog-brand menu w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-menu"/></a><div class="div-block-12"><a id="login-button" data-track-nav="navbar-login-button" href="stages#" class="button login-button login-button-js w-button">Login</a></div><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-4 w-nav"><div class="container-781 w-container"><nav role="navigation" class="nav-menu nav-bar-hack w-nav-menu"><div class="navmenucontainer"><div class="nav-mobile-header"><div class="div-block-11"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60aee66e33da0c1eacd2af10_Logo_Dark.svg" loading="lazy" alt="" class="nav-logo"/></div><div class="menu-button mobilenavclose w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60aee9b5eb4487513742d08a_Close.svg" loading="lazy" alt="" class="nav-close"/></div></div><div class="nav-divider"></div><a href="https://discord.com/" class="nav-link nav-link-mobile w-nav-link"><span class="text-span">Home</span></a><a href="https://discord.com/download" class="nav-link w-nav-link"><span class="text-span">Download</span></a><a href="https://discord.com/nitro" class="nav-link w-nav-link"><span class="text-span">Nitro</span></a><a href="https://discord.com/safetycenter" class="nav-link w-nav-link"><span class="text-span">Safety</span></a><a href="https://support.discord.com/hc/en-us" class="nav-link w-nav-link"><span class="text-span">Support</span></a><a href="blog/discord-activities-play-games-and-watch-together" class="nav-link w-nav-link"><span class="text-span">Blog</span></a><a href="jobs" class="nav-link w-nav-link"><span class="text-span">Careers</span></a><div class="navmenufill"></div><a data-track-download="Mobile Navigation" href="stages#" class="button nav-download download-button w-button">Download</a></div></nav><div class="menu-button w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div><div class="div-block-10"><a id="login-or-open-button" data-track-nav="navbar-login-button" href="login" class="button login-button w-button">Login</a></div></div><div class="w-layout-grid grid header"><div id="w-node-_187f134a-ff34-d254-5636-78dabbcf3540-67da0f5f" class="header-content"><h1 class="h1">Bring your community together with stages</h1><p class="paragraph center light">Stages offer a great way to engage and grow your community through easy to run audio events</p><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60afe340028f323e0e08a842_header_stage_alt.svg" loading="lazy" alt="Bring your community together with Stages" class="header-stage"/></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6024a78c54d27_spotlight_left.svg" loading="lazy" alt="Bring your community together with stages" class="spotlight-left"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60afe2e0ee4b8b9a48161c78_header_backdrop.svg" loading="lazy" alt="Bring your community together with stages" class="header-backdrop"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d60288edc54d28_spotlight_right.svg" loading="lazy" alt="Bring your community together with stages" class="spotlight-right"/></div><div class="section offwhite stage-showcase wf-section"><div class="w-layout-grid grid"><div id="w-node-cd5b3305-e7d9-9266-8c58-5c32a08bb4a5-67da0f5f" class="section-content"><h2 class="h2 center">Hundreds of Thousands of Communities are using stages to host events</h2><p class="paragraph center">Get started running your own audio events today. Check out tutorial videos and articles that will help guide you through everything you need to know about how to use Stages for your community. </p></div></div><div class="stage-gallery"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new.jpg" loading="lazy" srcset="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new-p-500.jpeg 500w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new-p-800.jpeg 800w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new-p-1600.jpeg 1600w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new-p-2000.jpeg 2000w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new-p-2600.jpeg 2600w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7dde81325fbacef8d46_desktop_stage_new.jpg 2880w" sizes="(max-width: 767px) 100vw, (max-width: 1919px) 90vw, 1080px" alt="Thousands of Communities are using stages to host events" class="gallery-desktop"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7e3df8b35b2ef301112_mobile_stage_new.jpg" loading="lazy" srcset="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7e3df8b35b2ef301112_mobile_stage_new-p-500.jpeg 500w, https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/615be7e3df8b35b2ef301112_mobile_stage_new.jpg 750w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 678px, 100vw" alt="Thousands of Communities are using stages to host events" class="gallery-mobile"/></div></div><div class="section wf-section"><div class="w-layout-grid grid"><div class="w-container"><div class="columns-7 w-row"><div class="w-col w-col-6 w-col-stack"><div class="w-embed w-iframe"><div style="padding-top: 56.17021276595745%; width: 100%; position: relative;">
+<iframe
+	type="text/html" 
+  width="100%" 
+  height="100%" 
+  src="https://www.youtube.com/embed/UC0Cebf0xv8?enablejsapi=1" 
+  frameborder="0"
+  data-track-youtube
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+></iframe>
+</div></div></div><div class="column-5 w-col w-col-6 w-col-stack"><h1>What are stage Channels?</h1><p>Check out what Stage channels are and how communities can use them to host events for their members and all of Discord.</p></div></div></div></div></div><div class="section offwhite wf-section"><div class="w-container"><div class="columns-6 w-row"><div class="w-col w-col-6 w-col-stack"><h1>How to set up your Stage Channels</h1><p>Ready to set one up? Learn more about how to set up a Stage channel and how to set it public so that more people can discover what your community is all about.</p></div><div class="w-col w-col-6 w-col-stack"><div class="w-embed w-iframe"><div style="padding-top: 56.17021276595745%; width: 100%; position: relative;">
+<iframe
+	type="text/html" 
+  width="100%" 
+  height="100%" 
+  src="https://www.youtube.com/embed/mDeN2nIsi6Y?enablejsapi=1" 
+  frameborder="0"
+  data-track-youtube
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+></iframe>
+</div></div></div></div></div></div><div class="section wf-section"><div class="w-layout-grid grid stage-article-header"><div id="w-node-_4c9c3b40-230d-9732-9b4c-7c367db361ec-67da0f5f" class="section-content"><h2 class="h2 center">Learn more about stages</h2><p class="paragraph center">Running a Stage channel is an easy, great way to maintain and grow your community. Check out these articles to learn more about how you can start one today!</p></div></div><div class="w-layout-grid gr"><a data-track="best-practices-article-button" id="w-node-_748cbd60-962c-7ad3-99e3-e6ac8dee10cf-67da0f5f" href="https://blog.discord.com/best-practices-for-running-and-moderating-stage-channels-ad27417fc26a" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">Best Practices for Running and Moderating Stage Channels</h5><p class="article-paragraph">Some tips and tricks on getting how best to set and run your event</p></div><p class="article-link">Learn more</p></a><a data-track="stage-vs-voice-article-button" id="w-node-_0fb63cd0-fd73-bbe3-cd58-09024d2e84eb-67da0f5f" href="https://blog.discord.com/when-to-use-stage-channels-vs-voice-channels-bc442260e6f6" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">When to Use Stage Channels vs Voice Channels</h5><p class="article-paragraph">Understand functionality and how and when to use each channel type with your community</p></div><p class="article-link">Learn more</p></a><a data-track="ideas-for-stage-grow-community-article-button" id="w-node-_661badc4-da98-f749-0602-841085760cb7-67da0f5f" href="https://blog.discord.com/ideas-for-how-stage-channels-can-engage-and-grow-your-community-948d1c91aa35" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">Ideas for how Stage Channels can Engage and Grow your Community</h5><p class="article-paragraph">Understand how to use Stage channels for growth and engagement and get inspired with some ideas we&#x27;ve seen</p></div><p class="article-link">Learn more</p></a></div><div class="w-layout-grid gr"><a data-track="how-to-ama-stage-article-button" id="w-node-_789e30be-db98-006b-b078-b49d7eea0948-67da0f5f" href="https://blog.discord.com/how-to-run-an-ama-or-townhall-via-a-stage-channel-ab9155366d6f" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">How to Run an AMA or Townhall with Stage Channels</h5><p class="article-paragraph">Use AMA and Townhall style events to share updates or new ideas with guests</p></div><p class="article-link">Learn more</p></a><a data-track="how-to-stage-podcast-article-button" id="w-node-_39cec4f3-c78b-0e70-a414-1e8bc3d40477-67da0f5f" href="https://blog.discord.com/how-to-use-stage-channels-for-your-podcast-62e18f63dcce" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">How to Use Stage Channels for your Podcast</h5><p class="article-paragraph">Learn more about how Stage channels can be a great way to host a live podcast with your community</p></div><p class="article-link">Learn more</p></a><a data-track="how-to-stage-shareart-article-button" id="w-node-_0bcab723-f34b-d545-7530-4d0f3cf71c2c-67da0f5f" href="https://blog.discord.com/how-to-use-stage-channels-to-share-art-627acc9c4c14" target="_blank" class="article-item w-inline-block"><div class="article-content"><h5 class="article-title">How to Use Stage Channels to Share Art</h5><p class="article-paragraph">From open mics to feedback sessions, Stage channels offer a great way to share art with your community </p></div><p class="article-link">Learn more</p></a></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="blog/discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="build" class="footer-link-item">Developers</a><a href="brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="stages#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="stages#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="stages#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="w/loader/loader.js" async defer></script>
+<script src="webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script nonce="MjAwLDEwOSw1Niw1MiwxMzIsNTYsMTAxLDE4OA==">(function(){var js = "window['__CF$cv$params']={r:'76fbee0c4cce089d',m:'TaAoQ9v4ig0SFG7zaybcAIazcUVpEhF57HpeWk78e.o-1669395514-0-AQQrr0WZFjWaEC3jS1bZfhPseGgeGD0vECvl5UBOcx6n132fClwCspzJLoQ47XlBEZsCs4FQUQRQEpBsicOiQApumf2YzjpIx/I07h5b10l4E3BxopueiUsQwMbKiHsWYA==',s:[0x4861059a8d,0x6b9a678909],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MjAwLDEwOSw1Niw1MiwxMzIsNTYsMTAxLDE4OA==',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MjAwLDEwOSw1Niw1MiwxMzIsNTYsMTAxLDE4OA==';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>

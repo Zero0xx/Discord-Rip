@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="theme-dark" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=3.0" name="viewport" />
+
+    <meta name="theme-color" content="#5865F2" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Discord Developer Portal" />
+    <meta property="og:title" content="Discord Developer Portal — API Docs for Bots and Developers" />
+    <meta
+      property="og:description"
+      content="Integrate your service with Discord — whether it's a bot or a game or whatever your wildest imagination can come up with."
+    />
+    <meta property="og:image" content="/images/og/discord-new-g.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@discord" />
+    <meta name="twitter:creator" content="@discord" />
+    <meta
+      property="twitter:description"
+      content="Integrate your service with Discord — whether it's a bot or a game or whatever your wildest imagination can come up with."
+    />
+    <meta property="twitter:image" content="/images/og/discord-new-g.png" />
+<link rel="stylesheet" href="../../../assets/532.caed15a280f4d3f13a4c.css" integrity="sha256-/5rXs/obtiPahh7K+T1YpoaNibrzwc4iYuXBoSn02EA= sha512-sIe0G8KdDFhrVqhkUt1wOKDnhn/fepVvXMkvcjw1VEAP+xjOSj9fiQ9pdglnNmOJJUd1WvlyitXsnxQJp3Y16w=="><link rel="icon" href="https://discord.com/assets/847541504914fd33810e70a0ea73177e.ico" />    <title>Discord Developer Portal</title>
+  </head>
+
+  <body>
+    <div id="app-mount"></div><script>window.GLOBAL_ENV = {
+      API_VERSION: 9,
+      API_ENDPOINT: '//discord.com/api',
+      WEBAPP_ENDPOINT: '//discord.com',
+      CDN_HOST: 'cdn.discordapp.com',
+
+      BRAINTREE_KEY: 'production_5st77rrc_49pp2rp4phym7387',
+      STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
+      MARKETING_ENDPOINT: '//discord.com',
+      RELEASE_CHANNEL: 'stable',
+      ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
+    };</script><script src="../../../assets/988f2d17a84d2ae47910.js" integrity="sha256-A9SSYRW8BaXGE7tAM0cOKA4rSJvBUPI186DGz08DeJk= sha512-LY3qfd2jctt8NjAMVz/mZ1a6JoVddZ9MSlqlydB1p+SwhUwT92/DN5K48lTtqGtOlLM8BbI6qGJFvNEv4E4XIg=="></script><script src="../../../assets/d8063e20cdaf7d34812f.js" integrity="sha256-87+waNG6Zb1IyMY0QkLIIacsml7qAcsiSBp//Sqidtg= sha512-c1agEL0QlXpGJaX8idwB+Q2j4bkMW93IGSlOvD8G1pkSIvDaolDlm7iZRJlCxhkPgaazEvKrzpbQbSvMXV0BGA=="></script><script src="../../../assets/8fd70e5346459fa081d3.js" integrity="sha256-TR5mqZB8o/YhxjvgxgE99s9JxZtx4ZiZeAWtxKzItvg= sha512-ad3l1zGJFIl+ZBYZiggcYyELwkIlJ1iPa+xoxTdCz0mKJDQJ7V47FCrsZojQPpbWwdKmOIypsdSdhOMpeTXm6Q=="></script>  <script>(function(){var js = "window['__CF$cv$params']={r:'76fbec1e19d9c51d',m:'7eUwZexO8p3Lvwh9RSMWjW3lX7ZUyVaaE0LoyM0T0I0-1669395435-0-Ad2oxV2NwgPpK56Cc2psGMO4N6HjiYGVtGiAwMkwylICAWf/NB/c8+nGqtz4xfJSMjiDQ51Cx1QbA2YiHG7wk+9RdfeJoY8trDZ4Axr0S6pje3JEYFLUN/nScBEOsNPI+/37ToQ/lNEsDft1WdyZvg49Bd5nZQkaeeQdpCwk1cXf',s:[0x2cdf466508,0xbbaefc3e8a],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

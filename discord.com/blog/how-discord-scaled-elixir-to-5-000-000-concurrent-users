@@ -1,0 +1,399 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>How Discord Scaled Elixir to 5,000,000 Concurrent Users</title><meta content="" name="description"/><meta content="How Discord Scaled Elixir to 5,000,000 Concurrent Users" property="og:title"/><meta content="" property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png" property="og:image"/><meta content="How Discord Scaled Elixir to 5,000,000 Concurrent Users" property="twitter:title"/><meta content="" property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+</style></head><body class="dont-translate"><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="header-blue-blog wf-section"><div class="blog-navbar"><a href="discord-activities-play-games-and-watch-together" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering" class="dropdown-link w-dropdown-link">Engineering &amp; Design</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured" class="blog-nav-item w-nav-link">Featured</a><a href="https://discord.com/" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""><input type="submit" value="" class="btn-search w-button"></form></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="blog-home-hero-header wf-section"></div><div class="blog-featured-section wf-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png" loading="lazy" alt="" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, (max-width: 1919px) 91vw, 1368px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png 2224w" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users" aria-current="page" class="blog-hero-heading w--current">How Discord Scaled Elixir to 5,000,000 Concurrent Users</a></div></div></div></div></div><div class="blog-post-container wf-section"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611ea6d6eb4a85d2c8c9ee9a_1_nYh2qmphemKUbmj0fqcatg.jpg" loading="lazy" width="72" alt="" class="image-22"/><div><div class="blog-post-author">Stanislav Vishnevskiy</div><div class="blog-post-author-name">July 6, 2017</div></div></div><div class="tag-section w-condition-invisible"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div class="empty-state w-dyn-empty"></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>From the beginning, Discord has been an early adopter of Elixir. The Erlang VM was the perfect candidate for the highly concurrent, real-time system we were aiming to build. We developed the original prototype of Discord in Elixir; that became the foundation of our infrastructure today. Elixir’s promise was simple: access the power of the Erlang VM through a much more modern and user-friendly language and toolset.</p><p>Fast forward two years, and we are up to nearly <strong>five million concurrent users</strong> and <strong>millions of events per second</strong> flowing through the system. While we don’t have any regrets with our choice of infrastructure, we did have to do a lot of research and experimentation to get here. Elixir is a new ecosystem, and the Erlang ecosystem lacks information about using it in production (although <a href="https://www.erlang-in-anger.com/" target="_blank">Erlang in Anger</a> is awesome). What follows is a set of lessons learned and libraries created throughout our journey of making Elixir work for Discord.</p><h3>Message Fanout</h3><p>While Discord is rich with features, most of it boils down to pub/sub. Users connect to a WebSocket and spin up a session process (a GenServer), which then communicates with remote Erlang nodes that contain guild (internal for a “Discord Server”) processes (also GenServers). When anything is published in a guild, it is fanned out to every session connected to it.</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/612402838c03b687ecc16d55_1*R4RGQCxpeFo2gZB41Zbu9w.gif" alt=""/></div></figure><p>When a user comes online, they connect to a guild, and the guild publishes a presence to all other connected sessions. Guilds have a lot of other logic behind the scenes, but here’s a simplified example:</p><div class="w-embed w-script"><script src="https://gist.github.com/vishnevskiy/72a474caede46752a9a824318fffcdd1.js"></script></div><p>This was a fine approach when we originally built Discord to groups of 25 of less. However, we have been fortunate enough to have “good problems” arise as <a href="https://facebook.github.io/react/blog/2015/10/19/reactiflux-is-moving-to-discord.html" target="_blank">people started using Discord for large scale groups</a>. Eventually we ended up with many Discord servers like <a href="https://www.reddit.com/r/Overwatch/" target="_blank">/r/Overwatch</a> with up to 30,000 concurrent users. During peak hours, we began to see these processes fail to keep up with their message queues. At a certain point, we had to manually intervene and turn off features that generated messages to help cope with the load. We had to figure this out before it became a full-time job.</p><p>We began by <a href="https://github.com/alco/benchfella" target="_blank">benchmarking</a> hot paths within the guild processes and quickly stumbled onto an obvious culprit. Sending messages between Erlang processes was not as cheap as we expected, and the reduction cost — Erlang unit of work used for process scheduling — was also quite high. We found that the wall clock time of a single send/2 call could range from 30μs to 70us due to Erlang de-scheduling the calling process. This meant that during peak hours, publishing an event from a large guild could take anywhere from 900ms to 2.1s! Erlang processes are effectively single threaded, and the only way to parallelize the work is to shard them. That would have been quite an undertaking, and we knew there had to be a better way.</p><p>We knew we had to somehow distribute the work of sending messages. Since spawning processes in Erlang is cheap, our first guess was to just spawn another process to handle each publish. However, each publish could be scheduled at a different time, and Discord clients depend on linearizability of events. That solution also wouldn’t scale well because the guild service was also responsible for an ever-growing amount of work.</p><p>Inspired by a <a href="http://www.ostinelli.net/boost-message-passing-between-erlang-nodes/" target="_blank">blog post</a> about boosting performance of message passing between nodes, <a href="https://github.com/hammerandchisel/manifold" target="_blank">Manifold</a> was born. Manifold distributes the work of sending messages to the remote nodes of the PIDs (Erlang process identifier), which guarantees that the sending processes at most only calls send/2 equal to the number of involved remote nodes. Manifold does this by first grouping PIDs by their remote node and then sending to Manifold.Partitioner on each of those nodes. The partitioner then consistently hashes the PIDs using :erlang.phash2/2, groups them by number of cores, and sends them to child workers. Finally, those workers send the messages to the actual processes. This ensures the partitioner does not get overloaded and still provides the linearizability guaranteed by send/2. This solution was effectively a drop-in replacement for send/2:</p><div class="w-embed w-script"><script src="https://gist.github.com/vishnevskiy/2412d6d8e2ecc253a0521b68d6d1fcde.js"></script></div><p>An awesome side-effect of Manifold was that we were able to not only distribute the CPU cost of fanning out messages, but also reduce the network traffic between nodes:</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240284f45c7e110039b18b_0*tDxgj1LH9PE-BZsz.png" alt=""/></div><figcaption><em>Network Reduction on 1 Guild Node</em></figcaption></figure><p>Manifold is available on our GitHub, so give it a spin. <a href="https://github.com/discordapp/manifold" target="_blank">https://github.com/discordapp/manifold</a>.</p><h3>Fast Access Shared Data</h3><p>Discord is a distributed system achieved through <a href="https://en.wikipedia.org/wiki/Consistent_hashing" target="_blank">consistent hashing</a>. Using this method requires us to create a ring data structure that can be used to lookup the node of a particular entity. We want that to be fast, so we chose the wonderful <a href="https://github.com/chrismoos/hash-ring" target="_blank">library by Chris Moos</a> via a Erlang C port (process responsible for interfacing with C code). It worked great for us, but as Discord scaled, we started to notice issues when we had bursts of users reconnecting. The Erlang process responsible for controlling the ring would start to get so busy that it would fail to keep up with requests to the ring, and the whole system would become overloaded. The solution at first seemed obvious: run multiple processes with the ring data to better utilize all the machine’s cores to answer the requests. However, we noticed that this was a hot path. Could we do better?</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124028442d2a3304ba031b2_1*UcM21Vu8CeoYLKuYIn-d5A.gif" alt=""/></div></figure><p>Let’s break down the cost of this hot path.</p><ul role="list"><li>A user can be in any number of guilds, but an average user is in 5.</li><li>An Erlang VM responsible for sessions can have up to 500,000 live sessions on it.</li><li>When a session connects, it has to lookup the remote node for each guild it is interested in.</li><li>The cost of communicating with another Erlang process using request/reply is about 12μs.</li></ul><p>If the session server were to crash and restart, it would take about 30 seconds just for the cost of lookups on the ring. That does not even account for Erlang de-scheduling the single process involved in the ring for other processes’ work. Could we remove this cost completely?</p><p>The first thing people do in Elixir when they want to speed up data access is to introduce <a href="http://erlang.org/doc/man/ets.html" target="_blank">ETS</a>. ETS is a fast, mutable dictionary implemented in C; the tradeoff is that data is copied in and out of it. We couldn’t just move our ring into ETS because we were using a C port to control the ring, so <a href="https://github.com/hammerandchisel/ex_hash_ring" target="_blank">we converted the code to pure Elixir</a>. Once that was implemented, we had a process whose job was to own the ring and constantly copy it into ETS so other processes could read directly from ETS. This noticeably improved performance, but ETS reads were about 7μs, and we were still spending 17.5 seconds on looking up values in the ring. The ring data structure is actually fairly large, and copying it in and out of ETS was the majority of the cost. We were disappointed; in any other language we could easily just have a shared value that was safe to read. There had to be a way to do this in Erlang!</p><p>After doing some research, we found <a href="https://github.com/mochi/mochiweb/blob/master/src/mochiglobal.erl" target="_blank">mochiglobal</a>, a module that exploits a feature of the VM: if Erlang sees a function that always returns the same constant data, it puts that data into a read-only shared heap that processes can access without copying the data. mochiglobal takes advantage of this by creating an Erlang module with one function at runtime and compiling it. Since the data is never copied, the lookup cost decreases to 0.3us, bringing the total time down to <strong>750ms</strong>! There’s no such thing as a free lunch though; the cost of building a module with a data structure as large as the ring at runtime can take up to a second. The good news is that we rarely change the ring, so it was a penalty we were willing to take.</p><p>We decided to port mochiglobal to Elixir and add some functionality to avoid creating atoms. Our version is called FastGlobal and is available at <a href="https://github.com/discordapp/fastglobal" target="_blank">https://github.com/discordapp/fastglobal</a>.</p><h3>Limited Concurrency</h3><p>After solving the performance of the node lookup hot path, we noticed that the processes responsible for handling guild_pid lookup on the guild nodes were getting backed up. The inherent back pressure of the slow node lookup had previously protected these processes. The new problem was that nearly 5,000,000 session processes were trying to stampede ten of these processes (one on each guild node). Making this path faster wouldn’t solve the problem; the underlying issue was that the call of a session process to this guild registry would timeout and leave the request in the queue of the guild registry. It would then retry the request after a backoff, but perpetually pile up requests and get into an unrecoverable state. Sessions would block on these requests until they timed out while receiving messages from other services, causing them to balloon their message queues and eventually OOM the whole Erlang VM resulting in <a href="https://status.discordapp.com/incidents/dj3l6lw926kl" target="_blank">cascading service outages</a>.</p><p>We needed to make session processes smarter; ideally, they wouldn’t even try to make these calls to the guild registry if a failure was inevitable. We didn’t want to use a <a href="https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern" target="_blank">circuit breaker</a> because we didn’t want a burst in timeouts to result in a temporary state where no attempts are made at all. We knew how we would solve this in other languages, but how would we solve it in Elixir?</p><p>In most other languages, we could use an atomic counter to track outstanding requests and bail early if the number was too high, effectively implementing a semaphore. The Erlang VM is built around coordinating through communication between processes, but we knew we didn’t want to overload a process responsible for doing this coordination. After some research we stumbled upon :ets.update_counter/4<strong>,</strong> which performs atomic conditional increment operations on a number inside an ETS key. Since we needed high concurrency, we could also run ETS in write_concurrency mode but still read the value out, since :ets.update_counter/4<strong> </strong>returns the result. This gave us the fundamental piece to create our <a href="https://github.com/hammerandchisel/semaphore" target="_blank">Semaphore</a> library. It is extremely easy to use and performs really well at high throughput:</p><div class="w-embed w-script"><script src="https://gist.github.com/vishnevskiy/ddfb274ed64c58bfa7387147b03320f1.js"></script></div><p>This library has proved instrumental in protecting our Elixir infrastructure. A similar situation to the aforementioned cascading outages occurred as recently as last week, but there were no outages this time. Our presence services crashed due to an unrelated issue, but the session services did not even budge, and the presence services were able to rebuild within minutes after restarting:</p><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240284fa047bc8bbc52c6a_0*vQF45QgC60mIsfaw.png" alt=""/></div><figcaption><em>Live presences within presence service</em></figcaption></figure><figure class="w-richtext-align-center"><div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61240284c6822095978617f6_0*2KspurjfjWgjW7BV.png" alt=""/></div><figcaption><em>CPU usage on the session services around the same time period.</em></figcaption></figure><p>You can find our Semaphore library on GitHub at <a href="https://github.com/discordapp/semaphore" target="_blank">https://github.com/discordapp/semaphore</a>.</p><h3>Conclusion</h3><p>Choosing to use and getting familiar with Erlang and Elixir has proven to be a great experience. If we had to go back and start over, we would definitely choose the same path. We hope that sharing our experiences and tools proves useful to other Elixir and Erlang developers, and we hope to continue sharing as we progress on our journey, solving problems and learning lessons along the way.</p><p><em>We are hiring, so</em><a href="https://discordapp.com/jobs" target="_blank"><em> come join us</em></a><em> if this type of stuff tickles your fancy.</em></p></div></div><div class="btn-wrapper w-condition-invisible"><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div data-w-id="507df21e-7107-68af-2f54-b8d93479cf10" class="column-desctop w-condition-invisible w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-1" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-2" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-3" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-4" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-5" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-6" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-7" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/611ea6d6eb4a85d2c8c9ee9a_1_nYh2qmphemKUbmj0fqcatg.jpg" loading="lazy" width="47" alt="" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Stanislav Vishnevskiy</div><div class="blog-post-author-desc">Discord CTO &amp; Co-Founder</div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Engineering &amp; Design</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="how-data-science-informs-strategy-innovation-at-discord" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fc38b519cf1b6213676d5d_202201002_COM_DataScienceBlog_1800x720.png 1800w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="how-data-science-informs-strategy-innovation-at-discord" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">How Data Science Informs Strategy &amp; Innovation at Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="why-and-how-discord-uses-patch-to-test-elixir" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png 1800w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="why-and-how-discord-uses-patch-to-test-elixir" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Why and How Discord Uses Patch to Test Elixir</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="how-discord-creates-insights-from-trillions-of-data-points" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png 2500w" class="blog-featured-small-image"/></a><a href="../category/engineering" class="blog-hero-category">Engineering &amp; Design</a><a href="how-discord-creates-insights-from-trillions-of-data-points" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">How Discord Creates Insights from Trillions of Data Points</div></a></div></div></div></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="../jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="../build" class="footer-link-item">Developers</a><a href="../brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="../terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="../moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="how-discord-scaled-elixir-to-5-000-000-concurrent-users#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "How Discord Scaled Elixir to 5,000,000 Concurrent Users",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users",
+ "datePublished": "Aug 25, 2021",
+ "dateCreated": "Aug 23, 2021",
+ "dateModified": "Aug 25, 2021",
+ "description": "",
+   "author": {
+    "@type": "Person",
+    "name": "Stanislav Vishnevskiy"
+  }
+ }
+</script><script nonce="MTA1LDM4LDQ2LDEzLDI1Myw0MSwxMzAsMjMx">(function(){var js = "window['__CF$cv$params']={r:'76fbeec22bfbc6b9',m:'c_a.iPyIuJHym_DHiuYastTDDiGe3ucc9jmxuonc2Fw-1669395543-0-ARRvh1L3sHjJn9F9WJlXcAcQgCvBw5wXcrwggD8tT6KEFXtyAURejEJleGZPe+0Y7e18SXL54ZyLETKTxDltbcdMBuN3N93MmutHclL8gz1oqYdBOkwJSZC8dQsUVjZsep09wa2AU4VoS3x9ZHkk8TIbR0bRRD/WzD0IO7cIaU/nasYbd6zCl55auzbt1PWXTw==',s:[0x7ab2b36717,0x46869f61b5],u:'/cdn-cgi/challenge-platform/h/b'};var _cpo=document.createElement('script');_cpo.nonce='MTA1LDM4LDQ2LDEzLDI1Myw0MSwxMzAsMjMx',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/cb/invisible.js?cb=76fbeec22bfbc6b9',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MTA1LDM4LDQ2LDEzLDI1Myw0MSwxMzAsMjMx';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>

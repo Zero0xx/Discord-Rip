@@ -1,0 +1,399 @@
+<!DOCTYPE html><!-- Last Published: Mon Nov 21 2022 18:35:28 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904"><head><meta charset="utf-8"/><title>Celebrating AAPI Heritage Month With Our Community</title><meta content="" name="description"/><meta content="Celebrating AAPI Heritage Month With Our Community" property="og:title"/><meta content="" property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg.png" property="og:image"/><meta content="Celebrating AAPI Heritage Month With Our Community" property="twitter:title"/><meta content="" property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.ece25cbbf.css" rel="stylesheet" type="text/css"/><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]--><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="https://global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle%201%20(3).svg");
+}
+.flag-el{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+</style></head><body class="dont-translate"><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="header-blue-blog wf-section"><div class="blog-navbar"><a href="discord-activities-play-games-and-watch-together" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering" class="dropdown-link w-dropdown-link">Engineering &amp; Design</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured" class="blog-nav-item w-nav-link">Featured</a><a href="https://discord.com/" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""><input type="submit" value="" class="btn-search w-button"></form></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:hsla(205.7142857142857, 9.09%, 15.10%, 1.00)" class="blog-home-hero-header wf-section"></div><div class="blog-featured-section wf-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg.png" loading="lazy" alt="" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, (max-width: 1919px) 91vw, 1368px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg.png 2000w" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/community" class="blog-hero-category">Community</a><a href="celebrating-aapi-heritage-month-with-our-community" aria-current="page" class="blog-hero-heading w--current">Celebrating AAPI Heritage Month With Our Community</a></div></div></div></div></div><div class="blog-post-container wf-section"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6112b4b77cf4caffab26a3d3_1_McFMUoSp_Ymo_Zpq1Otm_A.jpeg" loading="lazy" width="72" alt="" class="image-22"/><div><div class="blog-post-author">Fiona Tran</div><div class="blog-post-author-name">May 20, 2021</div></div></div><div class="tag-section w-condition-invisible"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div class="empty-state w-dyn-empty"></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>Hello, everyone! My name is Fiona (she/her), and I’m part of the Asian American &amp; Pacific Islander Employee Resource Group (ERG) here at Discord. It’s a space within the company where AAPI community members and allies can come together to make our workspace, and the world outside of our (digital) office walls, a better and more inclusive place where we can live our mission of creating space where everyone belongs.</p><p>For AAPI Heritage Month, we reached out to a few of the many Discord community leaders, business leaders, and musical artists within the Asian American &amp; Pacific Islander community to give them a chance to tell their story and inspire AAPI communities and allies across the world.</p><h1>Grace Ling</h1><figure style="max-width:" class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d56f3334353545a064_1*e0ZLV8L8zhBikdxN9k-EJA.png"/></div></figure><p>“I went to preschool and kindergarten as one of three Asians at my school,” says Grace Ling, founder of the <a href="https://www.designbuddies.community/">Design Buddies</a> community. “It was hard to fit in.”</p><p>From an early age, Grace found it difficult to find someone who could empathize with her experiences. Growing up singled out by her peers, the daughter of a mother from Taiwan and a father from Singapore, her story was unlike those of the people around her. That’s part of why she turned to blogging at an early age, writing posts that shared her life experiences at 16 and sharing them with the internet at large. “It helped me own my story and make others feel validated about their experiences,” she reflects — although both came at the cost of unwanted attention in the form of trolling and cyberbullying.</p><p>It would not be the last time Grace would take control over her own narrative, nor the last time others would push back against her for it. When she turned 22, she made the fateful decision to divert from her engineering background and pursue a career in product design. She met resistance almost immediately, but it didn’t stop her. “My professors told me to ‘stay in your lane’<em> </em>and not do design, but I wanted to prove them wrong.”</p><p>She got her wish. One year of hard work and dues-paying later, Grace had landed a full-time job in a competitive industry where credentials and connections can make a huge difference. She was no longer an outsider…but it didn’t always feel that way. The online design communities she joined didn’t always make someone with no formal design education feel welcome. She wanted a more open community oriented around all levels of interest and experience: a “wholesome place to talk about design.” After searching in vain, it was clear she’d have to make one.</p><p>She founded the Design Buddies server on Discord. A year later, her community had expanded to over 21,000 members.</p><p><em>We host 10+ events a month to try to include everyone’s interests and levels of experience in design. We also have an events team to keep everything running and also hold events in different timezones. Our types of events include socials, workshops, presentations, panels, work/study sessions, interest club meetings, and more.</em></p><p>The response to Design Buddies was overwhelming. The positive messages she gets from community members on a daily basis testify to how much you can change someone’s life with inclusiveness. Grace Ling didn’t just take control of her story…she helped thousands more do the same.</p><h1>Dave Lu</h1><figure class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d5f830dfa3cf61ca48_0*qpvZMP2rIZb4ed4t.png"/></div></figure><p>After a shooting in Atlanta that took the lives of six Asian women, Dave Lu took things into his own hands and composed an open letter to the world with the title “Enough,” and had it signed by over one thousand Asian American business leaders. To get it into the world’s view, he took a full-page ad in the Wall Street Journal, showing his demand that AAPI hate come to an end and committing to raise $10 million to put a stop to it.</p><figure class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d56f0870083b4a1a6f_0*Ib3gI5uuiWNsPh19.png"/></div></figure><p>Since then, over 8,000 additional signatures have joined in the movement called <a href="https://standwithasianamericans.com/">StandWithAsianAmericans</a> to fight for equity for AAPIs in the streets and in the workplace.</p><p>Dave points out that many AAPI members have been awakened from the past year of violence and trauma. “At first, many of us were afraid and confused, but now we are mobilized and determined to make sure we are heard and recognized. Share your stories with others because they deserve to be told and will have an impact.”</p><p><em>Find your voice. Change the narrative. This is our time to finally take a stand. We have been told for too long to be silent and keep our heads down. That time is over. We were fooled into a false sense of security that Asians are doing just fine in America, but now we know that isn’t true.</em></p><p>And if someone isn’t ready to take a stand on their own? “Be vocal on behalf of your AAPI colleagues and friends,” implores Dave. “It means more to them than you know when an ally steps up on their behalf and takes a stand. We need more allies to show support for our community so that others will follow.”</p><p>“Reach out to people in the AAPI community and find out ways you can volunteer to keep them safe from physical harm but also check on your AAPI friends mental health during this difficult time.”</p><h1>Kelly Tang</h1><figure class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d5a46fa0e7ea068e68_1*qt-keDGOTWvrlkFJ-4Cz5A.png"/></div></figure><p>As a first-generation ABC (American-Born Chinese), Kelly has faced her own challenges. While her hometown of Chicago is a diverse city, she nonetheless found herself in a school system without many other Asian students. Her identity was a source of tension that was hard to escape.</p><p><em>For a while I was ashamed of my Chinese identity because my clothes, my food, my language, and my culture were seen as weird. But because I was immersed in American culture and spoke English as my dominant language, the Chinese community views me as American. I think that a majority of ABCs live in this in-between area, where we’re not completely accepted by either side.</em></p><p>Although this shared struggle can unite ABCs, even those who grew up in radically different environments, finding them in your local area can be challenging. “Living in central Illinois, I don’t have a single Cantonese friend here,” Kelly explains, “so it’s been really hard to celebrate my culture.”</p><p>That’s why she decided not to let geography get in the way of her heritage. She founded a Discord community called Subtle Cantonese Traits that connects people of Cantonese backgrounds all over the world. It serves as a central hub, a way for members of a diaspora to unite across geographic boundaries. “I think my experience growing up without a strong sense of pride in my culture made me want to make this a priority for the server. If you don’t feel like you fit in wherever you live, I want you to feel like you’re home with us on the server.”</p><p>For members of the Subtle Cantonese Traits community, the shared experiences that make them fit in less in other places create a place where they belong more than anyone else: a place to brush up on language and customs that keep them apart from other Cantonese people worldwide. Nothing illustrates the bond this creates better than the New Years party held remotely between Cantonese people worldwide: “It was very heartwarming to see that people chose to spend their new year eve with their internet friends on the server, and we had several rounds of countdowns for people in different time zones.” Because no matter where you are on the map, you should always feel at home.</p><h1>Joleen Hsu</h1><figure class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d6129764a174c709ac_1*2ZW5sAPqmbkAPW_Q5kSFvA.png"/></div></figure><p>As a first-generation, Asian American woman growing up in the early 2000s, I struggled to see people of color on mainstream media,” says Joleen Hsu, the co-founder of gifting platform and community-building enterprise <a href="https://untoldstore.co/">untold</a>. This dearth of voices and representation from marginalized communities motivated her to make a difference — which meant lending her business acumen to a new kind of platform.</p><p>A business for distributing ethically-sourced gift items, untold seeks out, promotes, and empowers the efforts of BIPOC-owned businesses. Their mission is partly about giving these businesses the support they need to succeed in an environment stacked against them, but it’s also about learning from them. “My work is inspired by the neverending journey to understand the unique experiences of different communities and celebrate their identities,” Joleen explains.</p><p><em>During the summer of 2020, at the height of the Black Lives Matter movement, and as small businesses were shutting down across the US, I felt a strong calling to help promote businesses from communities of color. untold’s mission is to create meaningful experiences by promoting BIPOC entrepreneurs and their brands to build a more socially and environmentally inclusive economy. Our care packages are experience-based gifts that highlight artisanal and sustainable products, with the intention of sharing every brand’s unique story.</em></p><p>Joleen’s commitment to sharing the stories of others doesn’t end there. With her co-host Josephine Cheng, she started <a href="https://anchor.fm/untold-co">The untold Podcast</a>: a platform for interviewing BIPOC entrepreneurs, directly platforming them as businesspeople and members of marginalized communities. “It’s especially fulfilling for me because it embodies everything that I stand for: vulnerable and honest dialogue that sheds light on new perspectives.”</p><p>Which is part of the point: when you give strength and voices to people who are often denied it, everyone benefits.</p><h1>Stop the Hatred</h1><p>Along with Grace, Kelly, and Joleen, we had the opportunity to chat with songwriter and rapper MC Jin, who collaborated with Wyclef Jean to create Stop The Hatred, a song dedicated to raising awareness to the recent spike in anti-Asian hate crimes in the US.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d7cf597049438b2ec5_1*iyF6kdOmUyuLTomzHbR2tw.jpeg"/></div></figure><p>When asked to explain what he does, MC Jin breaks it down to the fundamentals: “I put words together in rhyme form over dope beats.” That’s a simple way to express a delicate art — a turn of phrase characteristic of Jin’s virtuoso style. When he sets out to express something, he doesn’t mince words.</p><p>MC Jin is the first Asian-American solo rapper to be signed to a major US label. A chart-topping trailblazer, he’s had hits both overseas and domestically. This pan-coastal track record speaks to his dual sense of identity, a complex relationship woven throughout his career.</p><p><em>The truth is none of us get to decide where we’re born, when we’re born and in what environment we’ll ultimately find ourselves as we are shaped as individuals. I love that culturally, I can connect with my Chinese heritage. At the same time, being born and raised in the states, I do feel an equal connection here as well. Not that it’s a new sentiment, but we are living in a time where it’s more clear than ever, there are some groups that may not feel this way. Simply put, to them, based off of our skin color or features, we don’t belong here, but we are boldly and proudly saying, “This is our home.”</em></p><p>As MC Jin is well aware, this is not a uniquely Asian-American problem. As a rapper with Chinese heritage in hip hop, MC Jin sees firsthand the tensions between his own community and Black individuals. It’s not always pretty, but there’s power in confronting it, something MC Jin doesn’t shy away from.</p><p><em>True solidarity means being able to acknowledge that although there has been tension and conflict in the past between the two communities, we can still find healing through dialogue, understanding and having empathy for each other’s plights as it pertains to discrimination and hatred.</em></p><p>He backs his sentiments up with action: “I myself was extremely encouraged and inspired to not only witness, but be able to speak at one of the first ‘Asians For Black Lives’ rallies in NYC last year. I will say though, on both ends, beyond posting on social media or showing up for a march, I hope that we can continue to see the humanity in each other.”</p><p>More recently, MC Jin has collaborated with legendary artist Wyclef Jean to produce a new track, <a href="https://www.youtube.com/watch?v=LUsWpoezfpY">Stop the Hatred</a>, addressing the rise in violence against members of the Asian-American community.</p><figure style="padding-bottom:33.723653395784545%" class="w-richtext-align-center w-richtext-figure-type-video"><div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/LUsWpoezfpY"></iframe></div></figure><p>Their partnership is the culmination not just of both of their careers confronting racial divides, but of their own long-standing professional relationship. “The fact that he produced my first single ‘Learn Chinese’ close to two decades ago makes our collaboration this time around so much more meaningful and timely. The challenge, more so something I’m processing on my own, is remaining mindful of the unfortunate reality that this song is being born out of pain, hurt and tragedy.” As a personal relationship with the piece, that’s understandable. It’s not a challenge listeners will face, as the lyrics speak poignantly and frankly about love and suffering both.</p><p><em>I’m blessed to have a platform to express my personal experiences and sentiments as an Asian-American. Especially with songs of this nature, I think it’s important for the message to be sincere. The ultimate goal would be to spark a change in the hearts and minds of people across all communities that we need to unite and come together, especially during these current times.</em></p><figure style="padding-bottom:33.723653395784545%" class="w-richtext-align-center w-richtext-figure-type-video"><div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/jA7jgP3VFQs"></iframe></div></figure><p>It’s a dream that can always come true — as long as there are people willing to fight for it.</p><h1>Bao Nguyen</h1><figure class="w-richtext-align-center"><div><img alt="" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1d69ec41325df038bbc_1*HoQo7ym0p0HapToLmyZybg.png"/></div></figure><p>We also spoke with Bao Nguyen, director of the Stop the Hatred <a href="https://www.youtube.com/watch?v=LUsWpoezfpY">music video</a>.</p><p>When Bao Nguyen first read the lyrics to MC Jin and Wyclef Jean’s “Stop the Hatred,” he was visited by visions of Chinatown — past and present. It’s that legacy of hope, struggle, and community that he captures as the director of the anti-racism single’s acclaimed music video, juxtaposing grainy archive footage with shots of modern youth and activists.</p><p>Growing up in a multiracial area outside of Washington, DC, Bao feels privileged to have experienced from an early age how groups with unique cultures and experiences nonetheless share a common humanity. He also saw how these groups struggled in similar ways, and how these struggles were made worse by divisions between them. “I’ve learned that for those on the edges of society, our struggle and pursuit of equity and justice is inextricably tied to one another. It cannot be seen as a transactional relationship but rather one of true reciprocity.”</p><p>The stories of <a href="https://www.npr.org/sections/codeswitch/2013/08/19/209258986/the-japanese-american-internee-who-met-malcolm-x">Yuri Kochiyama with Malcolm X</a>, Bruce Lee and Kareem Abdul-Jabbar, and Grace Lee Boggs are examples Bao looks to as great examples of Black and Asian solidarity. In each of these relationships is a basic level of mutual respect, of regard for one another. It’s an attitude embodied by one of his favorite cultural traditions, one observed by many Asian families worldwide: the act of taking off one’s shoes before entering a home.</p><p><em>It really comes down to the respect that we are showing others. Although it is now second nature to many of us, it is an act of intention. To take off one’s shoes and place them carefully next to the doorway, it is our way to symbolize our consideration. I don’t want to oversimplify or make a gross generalization here but perhaps this respect for entering a neighbor’s home explains why many of our parents and grandparents have kept their head down when entering their new homeland. And in this action of keeping their head down, perhaps it was never a sign of docility and meekness that we thought but instead a show of reverence and respect of this place we now call home — America.</em></p><p>In talking about the future, Bao is excited about the AAPI community standing up and becoming more vocal about their grievances and the racism they experience. “We have been talking this whole time but no one has been listening. But with the future generation, we are making sure that we are heard which is a powerful thing to witness.”</p><p>That’s why Bao’s doing his best to turn up the volume. Regarding his work directing “Stop the Hatred”, Bao explains that while the song was birthed from a moment of anguish, its message is ultimately uplifting: he wanted the music video to capture both of those feelings, and felt there was an important symbolism in having the music video be filmed in settings of joy and celebration that have been decimated by COVID-19. It was equally important to make the music video a portrait of the community: not headlines and statistics of AAPI individuals facing tragedy, but human beings.</p><p>To young BIPOC artists and creators, Bao offers the following:</p><p><em>Be unapologetically yourself and be HONEST. Don’t self-censor yourself to cater to a certain mainstream audience. If you are fortunate enough to be in a place that you have agency and power over the stories you can tell, ask yourself if you are the right person to tell that story. If you are not, try to build the spaces and lanes for those stories to be told from a person who should be telling that story.</em></p><h1>Even More Stories &amp; Opportunities</h1><p>These are just a few of the millions of stories out there in the world. If you’re unsure how you can help, we shared a blog post in March of this year titled <a href="https://blog.discord.com/resources-against-hate-and-discrimination-towards-the-aapi-community-5c4e385a6e6">Resources Against Hate and Discrimination Towards the AAPI Community</a>. It includes organizations and nonprofits that work to stop anti-Asian hate in the world.</p><p>Alongside these community leaders, I also talked with a few of the AAPI Employee Resource Group members at Discord. You can read their stories on their own dedicated blog post <a href="https://blog.discord.com/celebrating-aapi-heritage-month-with-our-employees-731a33e1b9b2">here</a>.</p><p>Behind the doors of Discord and throughout our communities, we will continue to support each other by celebrating our differences and relating through our similarities. We hope you take the time to celebrate AAPI identities this month and throughout the year.</p><p>—Fiona Tran, Graphic Designer at Discord</p><p>‍</p></div></div><div class="btn-wrapper w-condition-invisible"><a href="celebrating-aapi-heritage-month-with-our-community#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div data-w-id="507df21e-7107-68af-2f54-b8d93479cf10" class="column-desctop w-condition-invisible w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="celebrating-aapi-heritage-month-with-our-community#heading-1" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-2" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-3" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-4" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-5" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-6" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-7" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="celebrating-aapi-heritage-month-with-our-community#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6112b4b77cf4caffab26a3d3_1_McFMUoSp_Ymo_Zpq1Otm_A.jpeg" loading="lazy" width="47" alt="" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Fiona Tran</div><div class="blog-post-author-desc">Graphic Designer at Discord</div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Community</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="discord-moderator-admin-community-education-resources" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2000.png 2000w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-2600.png 2600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720-p-3200.png 3200w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e885a935a621fd0c6092c_2022_COM_AdminLaunch_002_BlogHdr_1800x720.png 7501w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="discord-moderator-admin-community-education-resources" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Building Better Communities with Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="pride-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1)-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/629e96dba2049c3bda424532_BlogHeader_1800x720%20(1).png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="pride-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Pride 2022 @ Discord</div></a></div><div role="listitem" class="collection-item-small w-dyn-item w-col w-col-4"><a href="aapihm-2022" class="link-block-4 w-inline-block"><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png" loading="lazy" alt="" sizes="(max-width: 479px) 83vw, (max-width: 767px) 90vw, (max-width: 991px) 29vw, (max-width: 1919px) 30vw, 434.6640625px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6269bd850e1f4f19bd418ad7_AAPI2022_HeroAssets_BlogHeader_1800x720.png 1800w" class="blog-featured-small-image"/></a><a href="../category/community" class="blog-hero-category">Community</a><a href="aapihm-2022" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">AAPI Heritage Month at Discord: Celebrating Who We Are</div></a></div></div></div></div></div><div class="section footer wf-section"><div class="w-layout-grid grid-f"><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8926-6f6e8924" class="footer-title"><h2 class="footer-title-text">Imagine a place</h2><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/631e41a9c664e8212a6ae94b_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="div-block-24"></div><div><a href="https://twitter.com/discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ffa222a56c0ac1f753_twitter.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.instagram.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff67595747f2e29eee_instagram.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.facebook.com/discord/" class="link-block-23 w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff12dd361cb2329600_facebook.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.youtube.com/discord/" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f8ff4ff82203334500c932f_youtube.svg" loading="lazy" alt="" class="image-3"/></a><a href="https://www.tiktok.com/@discord" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6374a1bf7602dc14503d942a_Tiktok%20(1).svg" loading="lazy" alt="" class="image-3"/></a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8929-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Product</div><a href="https://discord.com/download" class="footer-link-item">Download</a><a href="https://discord.com/nitro" class="footer-link-item">Nitro</a><a href="https://discordstatus.com/" class="footer-link-item">Status</a></div><div class="footer-link"><div class="footer-link-caption">Company</div><a href="https://discord.com/company" class="footer-link-item">About</a><a href="../jobs" class="footer-link-item">Jobs</a><a href="https://discord.com/branding" class="footer-link-item">Branding</a><a href="https://discord.com/newsroom" class="footer-link-item">Newsroom</a></div></div><div id="w-node-_2c491f7c-a0f7-123b-2ff5-89166f6e8946-6f6e8924" class="footer-link-group"><div class="footer-link"><div class="footer-link-caption">Resources</div><a href="https://discord.com/college" class="footer-link-item">College</a><a href="https://support.discord.com/hc/en-us" class="footer-link-item">Support</a><a href="https://discord.com/safetycenter" class="footer-link-item">Safety</a><a href="discord-activities-play-games-and-watch-together" class="footer-link-item">Blog</a><a href="https://feedback.discord.com/" class="footer-link-item">Feedback</a><a href="../build" class="footer-link-item">Developers</a><a href="../brand-new/streamkit" class="footer-link-item">StreamKit</a></div><div class="footer-link"><div class="footer-link-caption">Policies</div><a href="../terms" class="footer-link-item">Terms</a><a href="https://discord.com/privacy" class="footer-link-item">Privacy</a><a href="https://discord.com/guidelines" class="footer-link-item">Guidelines</a><a data-open-cookie-settings="true" href="celebrating-aapi-heritage-month-with-our-community#" class="footer-link-item">Cookie Settings</a><a href="https://discord.com/acknowledgements" class="footer-link-item">Acknowledgements</a><a href="https://discord.com/licenses" class="footer-link-item">Licenses</a><a href="../moderation" class="footer-link-item">Moderation</a></div></div></div><div class="footer-divider"></div><div class="footer-bar"><a href="https://discord.com" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae8db338d6025407c54d24_Logo.svg" loading="lazy" alt="Discord" class="logo-2"/></a><a href="celebrating-aapi-heritage-month-with-our-community#" class="button mobile footer-open-discord-button footer-open-discord-button-js w-button">Download</a><a href="celebrating-aapi-heritage-month-with-our-community#" class="button desktop footer-open-discord-button footer-open-discord-button-js w-button">Open Discord</a></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.6a1e691d1.js" type="text/javascript"></script><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]--><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'https://discord.com/login';
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'https://discord.com/register';
+    const openLink = 'https://discord.com/channels/@me';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="https://discord.com/assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+    !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "550821025425262");
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "Celebrating AAPI Heritage Month With Our Community",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6116d1e33e63b5c2eb34b939_1_mfXQyPv0hK0Ifm6Db1NPXg.png",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/celebrating-aapi-heritage-month-with-our-community",
+ "datePublished": "Aug 13, 2021",
+ "dateCreated": "Aug 13, 2021",
+ "dateModified": "Aug 13, 2021",
+ "description": "",
+   "author": {
+    "@type": "Person",
+    "name": "Fiona Tran"
+  }
+ }
+</script><script nonce="MTY0LDIxMSwyMjYsMTIxLDEyMiwxODQsMjI0LDE3">(function(){var js = "window['__CF$cv$params']={r:'76fbeea02906c6b9',m:'xV65VgeYs63QUz8TSN.xd3OmMphdLheNeLkBvDg2L9A-1669395538-0-AcoGDkRZNRdz+eRB9FmiWt8qOWkFnziuxIR5E2BouMgJjLYw30Hl3qK0czY5ui4Z3sBCbybygVj+hB4StLLiUh/J1Fu1CWoQYXrMV5TMgzxmtJ9OFu7tnaDQklxUGdeSq80PcjehXjiSt7+SNrl/2uJq8W8DgmGiGF+3gzaccXIsLVY04vaT75msDI2hJlHlCQ==',s:[0x34a45fd817,0x54e0553620],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MTY0LDIxMSwyMjYsMTIxLDEyMiwxODQsMjI0LDE3',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MTY0LDIxMSwyMjYsMTIxLDEyMiwxODQsMjI0LDE3';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body></html>
